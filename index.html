@@ -5,32 +5,31 @@
     <title>DEVICE — нтернет-магазин гаджетов</title>
   </head>
   <body>
-    <!-- TODO: обратить внимание на стайлгайд -->
-    <header class="main-header">
-      <a class="main-header-logo">
+    <header class="page-header">
+      <span class="page-header__logo">
         <img src="https://placehold.it/150x100" width="150" height="100" alt="Логотип интернет-магазина «Девайс»">
-      </a>
-      <!-- форма поиска -->
-      <ul class="user-navigation">
-        <li class="user-navigation-login"><a href="#">Войти</a></li>
-        <li class="user-navigation-compare"><a href="#">Сравнить</a></li>
-        <li class="user-navigation-cart"><a href="#">Корзина</a></li>
-      </ul>
-      <nav class="site-navigation">
-        <ul class="site-navigation-list">
-          <li><a class="site-navigation-catalog">Каталог товаров</a>
-            <ul class="site-navigation-catalog-list">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="inner.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+      </span>
+      <nav class="page-header__nav nav__items">
+        <!-- форма поиска -->
+        <ul class="nav__item user-menu__list">
+          <li class="user-menu__item--login"><a href="#">Войти</a></li>
+          <li class="user-menu__item--compare"><a href="#">Сравнить</a></li>
+          <li class="user-menu__item--cart"><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="nav__item site-menu__list">
+          <li><a class="site-menu__item site-menu-item" href="#">Каталог товаров</a>
+            <ul class="site-menu-item__submenu site-submenu__list">
+              <li class="site-submenu__item"><a href="#">Виртуальная реальность</a></li>
+              <li class="site-submenu__item"><a href="inner.html">Моноподы для селфи</a></li>
+              <li class="site-submenu__item"><a href="#">Экшн-камеры</a></li>
+              <li class="site-submenu__item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="site-submenu__item"><a href="#">Умные часы</a></li>
+              <li class="site-submenu__item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="site-menu__item"><a href="#">Доставка</a></li>
+          <li class="site-menu__item"><a href="#">Гарантия</a></li>
+          <li class="site-menu__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -41,47 +40,49 @@
       <!-- слайдер #2 -->
       <!-- список фирм партнеров -->
       <section class="about-us">
-        <h2>О нас</h2>
+        <h2 class="about-us__title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="about-us__list delivery-list">
+          <li class="delivery-list__item">Деловые Линии</li>
+          <li class="delivery-list__item">Автотрейдинг</li>
+          <li class="delivery-list__item">ЖелДорЭкспедиция</li>
         </ul>
-        <!-- TODO: зарезервировать класс и раздать его соответствующим элементам -->
-        <a href="#">Подробнее о нас</a>
+        <a class="about-us__button button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <!-- TODO: карта должна быть сделана ссылкой -->
-        <img src="https://placehold.it/150x100" width="150" height="100" alt="Изображение месторасположения интернет-магазина на карте">
-        <a href="#">Напишите нам</a>
+        <a class="contacts__map" href="#">
+          <img src="https://placehold.it/150x100" width="150" height="100" alt="Изображение месторасположения интернет-магазина на карте">
+        </a>
+        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
     </main>
-    <footer class="main-footer">
-      <a class="main-footer-logo">
+    <footer class="page-footer">
+      <span class="page-footer__logo">
         <img src="https://placehold.it/150x100" width="150" height="100" alt="Логотип интернет-магазина «Девайс»">
-      </a>
-      <p class="main-footer-address">г. Москва, ул. Строителей, 15</p>
-      <ul class="main-footer-services">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+      </span>
+      <ul class="page-footer__user-menu user-menu__list">
+        <li class="user-menu__item--login"><a href="#">Войти</a></li>
+        <li class="user-menu__item--compare"><a href="#">Сравнить</a></li>
+        <li class="user-menu__item--cart"><a href="#">Корзина</a></li>
       </ul>
-      <ul class="main-footer-socials">
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Твиттер</a></li>
+      <address class="page-footer__address address__items">
+        <p class="address__item">г. Москва, ул. Строителей, 15</p>
+        <p class="address__item">Тел.: +7 (495) 495-95-95</p>
+      </address>
+      <ul class="page-footer__services services__list">
+        <li class="services__item"><a href="#">Доставка</a></li>
+        <li class="services__item"><a href="#">Гарантия</a></li>
+        <li class="services__item"><a href="#">Контакты</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li class="user-navigation-login"><a href="#">Войти</a></li>
-        <li class="user-navigation-compare"><a href="#">Сравнить</a></li>
-        <li class="user-navigation-cart"><a href="#">Корзина</a></li>
+      <ul class="page-footer__socials socials__list">
+        <li class="socials__item--facebook"><a href="#">Фейсбук</a></li>
+        <li class="socials__item--instagram"><a href="#">Инстаграм</a></li>
+        <li class="socials__item--twitter"><a href="#">Твиттер</a></li>
       </ul>
-      <p class="main-footer-phone">Тел.: +7 (495) 495-95-95</p>
-      <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="page-footer__htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="https://placehold.it/150x100" width="150" height="100" alt="Разработано в HTML Academy">
       </a>
     </footer>
