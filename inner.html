@@ -52,93 +52,76 @@
           <h2 class="visually-hidden">Выбор моноподов для селфи по параметрам</h2>
           <p class="filters__title">Фильтр:</p>
           <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filters-form__cost cost">
-              <legend class="filters__legend">Стоимость</legend>
-              <label class="cost__value cost__value--min" for="min">от
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__legend">Стоимость</legend>
+              <label class="filters-form__cost filters-form__cost--min" for="min">от
                 <input name="toggle-min" type="text" value="0" id="min">
               </label>
-              <label class="cost__value cost__value--max" for="max">до
+              <label class="filters-form__cost filters-form__cost--max" for="max">до
                 <input name="toggle-max" type="text" value="5000" id="max">
               </label>
             </fieldset>
-            <fieldset class="filters-form__color color">
-              <legend class="filters__legend">Цвет</legend>
-              <ul class="color__list color-list">
-                <li class="color-list__item">
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__legend">Цвет</legend>
+              <ul class="filters-form__list">
+                <li class="filters-form__item">
                   <input id="black" type="checkbox" name="black" checked>
                   <label for="black">Черный</label>
                 </li>
-                <li class="color-list__item">
+                <li class="filters-form__item">
                   <input id="white" type="checkbox" name="white">
                   <label for="white">Белый</label>
                 </li>
-                <li class="color-list__item">
+                <li class="filters-form__item">
                   <input id="blue" type="checkbox" name="blue" checked>
                   <label for="blue">Синий</label>
                 </li>
-                <li class="color-list__item">
+                <li class="filters-form__item">
                   <input id="red" type="checkbox" name="red" checked>
                   <label for="red">Красный</label>
                 </li>
-                <li class="color-list__item">
+                <li class="filters-form__item">
                   <input id="pink" type="checkbox" name="pink">
                   <label for="pink">Розовый</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filters-form__bluetooth bluetooth">
-              <legend class="filters__legend">Bluetooth</legend>
-              <ul class="bluetooth__list bluetooth-list">
-                <li class="bluetooth-list__item">
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__legend">Bluetooth</legend>
+              <ul class="filters-form__list">
+                <li class="filters-form__item">
                   <input id="bluetooth-true" type="radio" name="bluetooth" value="true" checked>
                   <label for="bluetooth-true">Есть</label>
                 </li>
-                <li class="bluetooth-list__item">
+                <li class="filters-form__item">
                   <input id="bluetooth-false" type="radio" name="bluetooth" value="false">
                   <label for="bluetooth-false">Нет</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="filters__button button" type="submit">Показать</button>
+            <button class="filters-form__button button" type="submit">Показать</button>
           </form>
         </section>
       </div>
       <div class="main-content__item main-content__item--right">
         <section class="products">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
-          <div class="products__sorting sorting">
-             <form class="sorting__form sorting-form" action="https://echo.htmlacademy.ru" method="get">
-               <fieldset class="sorting-form__sort">
-                 <legend class="sorting-form__legend">Сортировка:</legend>
-                 <ul class="sorting-form__list">
-                   <li class="sorting-form__item">
-                     <input id="sorting-by-cost" type="radio" name="sorting-by" value="cost" onchange='this.form.submit()' checked>
-                     <label for="sorting-by-cost">По цене</label>
-                   </li>
-                   <li class="sorting-form__item">
-                     <input id="sorting-by-type" type="radio" name="sorting-by" value="type" onchange='this.form.submit()'>
-                     <label for="sorting-by-type">По типу</label>
-                   </li>
-                   <li class="sorting-form__item">
-                     <input id="sorting-by-popularity" type="radio" name="sorting-by" value="popularity" onchange='this.form.submit()'>
-                     <label for="sorting-by-popularity">По популярности</label>
-                   </li>
-                 </ul>
-               </fieldset>
-               <fieldset class="sorting-form__choice">
-                 <legend class="sorting-form__legend"><span class="visually-hidden">Выбрать вид сортировки</span></legend>
-                 <ul class="sorting-form__list">
-                   <li class="sorting-form__item">
-                     <input id="choice-ascending" type="radio" name="choice-by" value="ascending" onchange='this.form.submit()' checked>
-                     <label for="choice-ascending"><span class="visually-hidden">По возрастанию</span></label>
-                   </li>
-                   <li class="sorting-form__item">
-                     <input id="choice-descending" type="radio" name="choice-by" value="descending" onchange='this.form.submit()'>
-                     <label for="choice-descending"><span class="visually-hidden">По убыванию</span></label>
-                   </li>
-                 </ul>
-               </fieldset>
-            </form>
+          <div class="products__sorting">
+            <div class="sort">
+              <p class="sort__title">Сортировка:</p>
+              <ul class="sort__list">
+                <li class="sort__item"><a class="sort__link" href="#">По цене</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По типу</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По популярности</a></li>
+              </ul>
+            </div>
+            <div class="choice">
+              <span class="visually-hidden">Выбрать вид сортировки:</span>
+              <ul class="choice__list">
+                <li class="choice__item choice__item--ascending"><a class="choice__link" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li class="choice__item choice__item--descending"><a class="choice__link" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              </ul>
+            </div>
           </div>
           <ul class="products__items">
             <li class="products__item">

@@ -59,14 +59,14 @@
             <a class="gadgets-slider__button button-link" href="#">Подробнее</a>
             <table class="gadgets-slider__table">
               <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+              <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
-              </tr>
-              <tr>
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
               </tr>
             </table>
           </li>
@@ -77,10 +77,10 @@
             <a class="gadgets-slider__button button-link" href="#">Подробнее</a>
             <table class="gadgets-slider__table">
               <tr>
-                <td>48 часов</td>
+                <th>Без подзарядки</th>
               </tr>
               <tr>
-                <td>Без подзарядки</td>
+                <td>48 часов</td>
               </tr>
             </table>
           </li>
@@ -91,12 +91,12 @@
             <a class="gadgets-slider__button button-link" href="#">Подробнее</a>
             <table class="gadgets-slider__table">
               <tr>
-                <td>800 м</td>
-                <td>50 м</td>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
               </tr>
               <tr>
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+                <td>800 м</td>
+                <td>50 м</td>
               </tr>
             </table>
           </li>
@@ -106,50 +106,62 @@
         <h2 class="visually-hidden">Разделы каталога товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Виртуальная реальность">
-            <h3 class="catalog__title"><a class="catalog__link" href="#">Виртуальная реальность</a></h3>
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Виртуальная реальность">
+              <h3 class="catalog__title">Виртуальная реальность</h3>
+            </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Моноподы для селфи">
-            <h3 class="catalog__title"><a class="catalog__link" href="inner.html">Моноподы для селфи</a></h3>
+            <a class="catalog__link" href="inner.html">
+              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Моноподы для селфи">
+              <h3 class="catalog__title">Моноподы для селфи</h3>
+            </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Экшн-камеры">
-            <h3 class="catalog__title"><a class="catalog__link" href="#">Экшн-камеры</a></h3>
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Экшн-камеры">
+              <h3 class="catalog__title">Экшн-камеры</h3>
+            </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Фитнес-браслеты">
-            <h3 class="catalog__title"><a class="catalog__link" href="#">Фитнес-браслеты</a></h3>
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Фитнес-браслеты">
+              <h3 class="catalog__title">Фитнес-браслеты</h3>
+            </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Умные часы">
-            <h3 class="catalog__title"><a class="catalog__link" href="#">Умные часы</a></h3>
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Умные часы">
+              <h3 class="catalog__title">Умные часы</h3>
+            </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Квадрокоптеры">
-            <h3 class="catalog__title"><a class="catalog__link" href="#">Квадрокоптеры</a></h3>
+            <a class="catalog__link" href="#">
+              <img class="catalog__image" src="https://placehold.it/150x100" width="150" height="100" alt="Квадрокоптеры">
+              <h3 class="catalog__title">Квадрокоптеры</h3>
+            </a>
           </li>
         </ul>
       </section>
       <section class="main-content__services services">
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="services__list">
-          <li class="services__item"><a class="services__link" href="#tab-1">Доставка</a></li>
-          <li class="services__item"><a class="services__link" href="#tab-2">Гарантия</a></li>
-          <li class="services__item"><a class="services__link" href="#tab-3">Кредит</a></li>
+          <li class="services__item"><a class="services__link" href="#delivery">Доставка</a></li>
+          <li class="services__item"><a class="services__link" href="#warranty">Гарантия</a></li>
+          <li class="services__item"><a class="services__link" href="#credit">Кредит</a></li>
         </ul>
-        <article id="tab-1" class="services__tab">
+        <div id="delivery" class="services__tab">
           <h3 class="services__title">Доставка</h3>
           <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </article>
-        <article id="tab-2" class="services__tab">
+        </div>
+        <div id="warranty" class="services__tab">
           <h3 class="services__title">Гарантия</h3>
           <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </article>
-        <article id="tab-3" class="services__tab">
+        </div>
+        <div id="credit" class="services__tab">
           <h3 class="services__title">Кредит</h3>
           <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </article>
+        </div>
       </section>
       <section class="main-content__brands brands">
         <h2 class="visually-hidden">Бренды наших товаров</h2>
@@ -164,12 +176,12 @@
         <h2 class="about__title">О нас</h2>
         <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
         <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="about__delivery-list">
-          <li class="about__delivery-item">Деловые Линии</li>
-          <li class="about__delivery-item">Автотрейдинг</li>
-          <li class="about__delivery-item">ЖелДорЭкспедиция</li>
+        <ul class="about__list">
+          <li class="about__item">Деловые Линии</li>
+          <li class="about__item">Автотрейдинг</li>
+          <li class="about__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about__button button-link">Подробнее о нас</a>
+        <a class="about__button button-link" href="#">Подробнее о нас</a>
       </section>
       <section class="main-content__contacts contacts">
         <h2 class="contacts__title">Контакты</h2>
