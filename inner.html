@@ -47,26 +47,65 @@
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
         <li class="breadcrumbs__item">Моноподы для селфи</li>
       </ul>
-      <div class="main-content__item main-content__item--right">
+      <div class="main-content__item main-content__item--left">
         <section class="filters">
-          <h2 class="filters__title visually-hidden">Фильтр товаров</h2>
-          <!-- Фильтр: -->
-          <!-- Стоимость -->
-          <h3 class="filters__subtitle">Цвет</h3>
-          <!-- TODO: переверстать формой -->
-          <ul>
-            <li>Черный</li>
-            <li>Белый</li>
-            <li>Синий</li>
-            <li>Красный</li>
-            <li>Розовый</li>
-          </ul>
-          <h3 class="filters__subtitle">Bluetooth</h3>
-          <ul>
-            <li>Есть</li>
-            <li>Нет</li>
-          </ul>
-          <a class="button filters__button" href="#">Показать</a>
+          <h2 class="filters__title">Фильтр:</h2>
+          <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filters-form__cost cost">
+              <legend class="filters__legend">
+                <h3 class="filters__subtitle">Стоимость</h3>
+              </legend>
+              <label class="cost__value--min" for="min">от
+                <input name="toggle-min" type="text" value="0" id="min">
+              </label>
+              <label class="cost__value--max" for="max">до
+                <input name="toggle-max" type="text" value="5000" id="max">
+              </label>
+            </fieldset>
+            <fieldset class="filters-form__color color">
+              <legend class="filters__legend">
+                <h3 class="filters__subtitle">Цвет</h3>
+              </legend>
+              <ul class="color__list color-list">
+                <li class="color-list__item">
+                  <input id="black" type="checkbox" name="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li class="color-list__item">
+                  <input id="white" type="checkbox" name="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="color-list__item">
+                  <input id="blue" type="checkbox" name="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="color-list__item">
+                  <input id="red" type="checkbox" name="red" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li class="color-list__item">
+                  <input id="pink" type="checkbox" name="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters-form__bluetooth bluetooth">
+              <legend class="filters__legend">
+                <h3 class="filters__subtitle">Bluetooth</h3>
+              </legend>
+              <ul class="bluetooth__list bluetooth-list">
+                <li class="bluetooth-list__item">
+                  <input id="bluetooth-true" type="radio" name="bluetooth" value="true" checked>
+                  <label for="bluetooth-true">Есть</label>
+                </li>
+                <li class="bluetooth-list__item">
+                  <input id="bluetooth-false" type="radio" name="bluetooth" value="false">
+                  <label for="bluetooth-false">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filters__button button" type="submit">Показать</button>
+          </form>
         </section>
       </div>
       <div class="main-content__item main-content__item--right">
