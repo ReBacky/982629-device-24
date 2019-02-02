@@ -49,7 +49,8 @@
       </ul>
       <div class="main-content__item main-content__item--left">
         <section class="filters">
-          <h2 class="filters__title">Фильтр:</h2>
+          <h2 class="visually-hidden">Выбор моноподов для селфи по параметрам</h2>
+          <p class="filters__title">Фильтр:</p>
           <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-form__cost cost">
               <legend class="filters__legend">Стоимость</legend>
@@ -104,8 +105,41 @@
       </div>
       <div class="main-content__item main-content__item--right">
         <section class="products">
-          <h2 class="products__title visually-hidden">Список товаров</h2>
-          <!-- Сортировка: -->
+          <h2 class="visually-hidden">Список моноподов для селфи</h2>
+          <div class="products__sorting sorting">
+             <form class="sorting__form sorting-form" action="https://echo.htmlacademy.ru" method="get">
+               <fieldset class="sorting-form__sort">
+                 <legend class="sorting-form__legend">Сортировка:</legend>
+                 <ul class="sorting-form__list">
+                   <li class="sorting-form__item">
+                     <input id="sorting-by-cost" type="radio" name="sorting-by" value="cost" onchange='this.form.submit()' checked>
+                     <label for="sorting-by-cost">По цене</label>
+                   </li>
+                   <li class="sorting-form__item">
+                     <input id="sorting-by-type" type="radio" name="sorting-by" value="type" onchange='this.form.submit()'>
+                     <label for="sorting-by-type">По типу</label>
+                   </li>
+                   <li class="sorting-form__item">
+                     <input id="sorting-by-popularity" type="radio" name="sorting-by" value="popularity" onchange='this.form.submit()'>
+                     <label for="sorting-by-popularity">По популярности</label>
+                   </li>
+                 </ul>
+               </fieldset>
+               <fieldset class="sorting-form__choice">
+                 <legend class="sorting-form__legend"><span class="visually-hidden">Выбрать вид сортировки</span></legend>
+                 <ul class="sorting-form__list">
+                   <li class="sorting-form__item">
+                     <input id="choice-ascending" type="radio" name="choice-by" value="ascending" onchange='this.form.submit()' checked>
+                     <label for="choice-ascending"><span class="visually-hidden">По возрастанию</span></label>
+                   </li>
+                   <li class="sorting-form__item">
+                     <input id="choice-descending" type="radio" name="choice-by" value="descending" onchange='this.form.submit()'>
+                     <label for="choice-descending"><span class="visually-hidden">По убыванию</span></label>
+                   </li>
+                 </ul>
+               </fieldset>
+            </form>
+          </div>
           <ul class="products__items">
             <li class="products__item">
               <article class="gadget">
@@ -160,7 +194,15 @@
               </article>
             </li>
           </ul>
-          <!-- пагинация -->
+          <div class="products__pagination pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item pagination__item--back"><a class="pagination__link">Назад</a></li>
+              <li class="pagination__item"><a class="pagination__link">1</a></li>
+              <li class="pagination__item"><a class="pagination__link">2</a></li>
+              <li class="pagination__item"><a class="pagination__link">3</a></li>
+              <li class="pagination__item pagination__item--forward"><a class="pagination__link">Вперед</a></li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
