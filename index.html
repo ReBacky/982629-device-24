@@ -211,7 +211,7 @@
       <div class="page-footer__item">
         <address class="page-footer__contacts contacts">
           <span class="contacts__location">г. Москва, ул. Строителей, 15</span>
-          <span class="contacts__tel">Тел.: +7 (495) 495-95-95</span>
+          <span class="contacts__tel"><a class="contacts__link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></span>
         </address>
       </div>
       <div class="page-footer__item">
@@ -232,18 +232,18 @@
     </section>
     <section class="modal modal-write">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="modal-write__form write-us" action="https://echo.htmlacademy.ru" method="post">
-        <div class="write-us__item">
-          <label class="write-us__label" for="full-name__field">Ваше имя:</label>
-          <input class="write-us__input" id="full-name__field" type="text" name="full-name" placeholder="Имя Фамилия">
+      <form class="modal-write__form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__item">
+          <label class="form__label" for="full-name-field">Ваше имя:</label>
+          <input class="form__input" id="full-name-field" type="text" name="full-name" placeholder="Имя Фамилия">
         </div>
-        <div class="write-us__item">
-          <label class="write-us__label" for="email__field">Ваш e-mail:</label>
-          <input class="write-us__input" id="email__field" type="email" name="email" placeholder="email@example.com">
+        <div class="form__item">
+          <label class="form__label" for="email-field">Ваш e-mail:</label>
+          <input class="form__input" id="email-field" type="email" name="email-address" placeholder="email@example.com">
         </div>
-        <label class="write-us__label" for="mail-text__field">Текст письма:</label>
-        <textarea class="write-us__text" id="mail-text__field" name="mail-text" rows="10">В свободной форме</textarea>
-        <button class="write-us__button button" type="submit">Отправить</button>
+        <label class="form__label" for="mail-text">Текст письма:</label>
+        <textarea class="form__text" id="mail-text" name="mail-text" rows="10">В свободной форме</textarea>
+        <button class="form__button button" type="submit">Отправить</button>
       </form>
       <button class="modal-write__button button-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
     </section>
