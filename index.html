@@ -223,7 +223,27 @@
         </a>
       </div>
     </footer>
-    <!--попап окно с картой-->
-    <!--попап окно с контактной формой  -->
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!-- сервис карт -->
+      <button class="modal-map__button button-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    </section>
+    <section class="modal modal-write">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="modal-write__form write-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us__item">
+          <label class="write-us__label" for="full-name__field">Ваше имя:</label>
+          <input class="write-us__input" id="full-name__field" type="text" name="full-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="write-us__item">
+          <label class="write-us__label" for="email__field">Ваш e-mail:</label>
+          <input class="write-us__input" id="email__field" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <label class="write-us__label" for="mail-text__field">Текст письма:</label>
+        <textarea class="write-us__text" id="mail-text__field" name="mail-text" rows="10">В свободной форме</textarea>
+        <button class="write-us__button button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-write__button button-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    </section>
   </body>
 </html>
