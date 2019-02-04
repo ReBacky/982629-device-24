@@ -43,13 +43,10 @@
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
       <section class="main-content__gadgets-slider gadgets-slider">
         <h2 class="visually-hidden">Популярные гаджеты</h2>
-        <input id="radio-1" type="radio" name="toggle" checked>
-        <input id="radio-2" type="radio" name="toggle">
-        <input id="radio-3" type="radio" name="toggle">
-        <ul class="visually-hidden">
-          <li><label for="radio-1">Первый слайд</label></li>
-          <li><label for="radio-2">Второй слайд</label></li>
-          <li><label for="radio-3">Третий слайд</label></li>
+        <ul class="gadgets-slider__switches-list">
+          <li class="gadgets-slider__radio"><button class="gadgets-slider__button" type="button">Первый слайд</button></li>
+          <li class="gadgets-slider__radio"><button class="gadgets-slider__button" type="button">Второй слайд</button></li>
+          <li class="gadgets-slider__radio"><button class="gadgets-slider__button" type="button">Третий слайд</button></li>
         </ul>
         <ul class="gadgets-slider__list">
           <li class="gadgets-slider__item">
@@ -150,18 +147,18 @@
           <li class="services__item"><a class="services__link" href="#warranty">Гарантия</a></li>
           <li class="services__item"><a class="services__link" href="#credit">Кредит</a></li>
         </ul>
-        <div id="delivery" class="services__tab">
+        <section id="delivery" class="services__tab">
           <h3 class="services__title">Доставка</h3>
           <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div id="warranty" class="services__tab">
+        </section>
+        <section id="warranty" class="services__tab">
           <h3 class="services__title">Гарантия</h3>
           <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        <div id="credit" class="services__tab">
+        </section>
+        <section id="credit" class="services__tab">
           <h3 class="services__title">Кредит</h3>
           <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </div>
+        </section>
       </section>
       <section class="main-content__brands brands">
         <h2 class="visually-hidden">Бренды наших товаров</h2>
