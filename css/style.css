@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   src:
     local("Open Sans Light"),
     local("OpenSans-Light"),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans Regular";
+  font-family: "Open Sans";
   src:
     local("Open Sans"),
     local("OpenSans"),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroy";
   src:
     local("Gilroy Light"),
     local("Gilroy-Light"),
@@ -32,13 +32,13 @@
 }
 
 @font-face {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy";
   src:
     local("Gilroy ExtraBold"),
     local("Gilroy-ExtraBold"),
     url("../fonts/gilroyextrabold.woff2") format("woff2"),
     url("../fonts/gilroyextrabold.woff") format("woff");
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -50,7 +50,7 @@ body {
   margin: 0;
   padding: 0;
   /*Типографика*/
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -177,7 +177,7 @@ img {
 }
 
 .user-menu__link {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -216,9 +216,9 @@ img {
 }
 
 .site-menu__link {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.6px;
   color: #000;
@@ -246,7 +246,7 @@ img {
 }
 
 .site-submenu__link {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -274,9 +274,9 @@ img {
 }
 
 .main-content__title {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000;
@@ -319,9 +319,9 @@ img {
 }
 
 .filters-form__legend {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000;
@@ -333,7 +333,7 @@ img {
   list-style: none;
 }
 
-.filters-form__input[type="checkbox"]:disabled ~ .filters-form__label {
+.filters-form__input:disabled + .filters-form__label {
   color: #a6a6a6;
 }
 
@@ -346,9 +346,9 @@ img {
 
 .button {
   display: block;
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 40px;
   letter-spacing: 3.6px;
   color: #000;
@@ -383,9 +383,9 @@ img {
 }
 
 .gadget__title-link {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000;
@@ -400,7 +400,7 @@ img {
 }
 
 .gadget__price {
-  font-family: "Gilroy Light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -414,7 +414,7 @@ img {
 }
 
 .compare-button {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -435,9 +435,9 @@ img {
 /* _________________________ about */
 
 .about__title {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000;
@@ -452,9 +452,9 @@ img {
 .about__item {
   position: relative;
   padding-left: 34px;
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 40px;
   letter-spacing: 0.16px;
   color: #000;
@@ -480,9 +480,9 @@ img {
 
 .button-link {
   display: block;
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 40px;
   letter-spacing: 3.6px;
   color: #000;
@@ -504,9 +504,9 @@ img {
 /* _________________________ contacts */
 
 .contacts__title {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000;
