@@ -1,0 +1,622 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Light"),
+    local("OpenSans-Light"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans"),
+    local("OpenSans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    local("Gilroy Light"),
+    local("Gilroy-Light"),
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    local("Gilroy ExtraBold"),
+    local("Gilroy-ExtraBold"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* _________________________ global style */
+
+body {
+  /*Позиционирование*/
+  /*Блочная модель*/
+  margin: 0;
+  padding: 0;
+  /*Типографика*/
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  /* P = X * S / 1000, где X — трекинг в PS, S — размер шрифта */
+  letter-spacing: 0.15px;
+  color: #464646;
+  /*Оформление*/
+  background-color: #ffffff;
+  /*Анимация*/
+  /*Разное*/
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* _________________________ hide */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* _________________________ header */
+
+.page-header {
+  background-color: #f7e296;
+}
+
+/* _________________________ logo-device */
+
+.logo-device__image {
+  fill: #000;
+}
+
+.logo-device:hover {
+  opacity: 0.6;
+}
+
+.logo-device:active {
+  opacity: 0.3;
+}
+
+/* _________________________ search */
+
+.search-form {
+  position: relative;
+  width: 440px;
+  height: 50px;
+}
+
+.search-form__label {
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 30px;
+  padding: 10px;
+}
+
+.search-form__input {
+  padding: 0 5px 0 40px;
+  width: 355px;
+  height: 46px;
+  font: inherit;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  opacity: 0.3;
+}
+
+.search-form__input:hover {
+  opacity: 0.6;
+}
+
+.search-form__input:focus {
+  border-bottom: 2px solid #000;
+  opacity: 1;
+}
+
+.search-form__input:focus ~ .search-form__button {
+  visibility: visible;
+}
+
+.search-form__button {
+  position: absolute;
+  width: 81px;
+  height: 46px;
+  border: 2px solid #000000;
+  margin-left: 0;
+  background-color: transparent;
+  visibility: hidden;
+}
+
+.search-form__button:hover,
+.search-form__button:focus {
+  background-color: #000;
+  color: #fff;
+  visibility: visible;
+}
+
+.search-form__button:active {
+  background-color: #000;
+  color: rgba(255, 255, 255,  0.3);
+  visibility: visible;
+}
+
+/* _________________________ user-menu */
+
+.user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu__link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+
+.user-menu__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-menu__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu__image {
+  fill: #000;
+  opacity: 1;
+}
+
+.user-menu__link:hover .user-menu__image {
+  opacity: 0.6;
+}
+
+.user-menu__link:active .user-menu__image {
+  opacity: 0.3;
+}
+
+/* _________________________ site-menu */
+
+.site-menu,
+.site-submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-menu__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.site-menu__link:hover {
+  opacity: 0.6;
+}
+
+.site-menu__link:active {
+  opacity: 0.3;
+}
+
+.site-menu__item--dropdown {
+  position: relative;
+}
+
+.site-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f7e296;
+  display: none;
+}
+
+.site-submenu__link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+
+.site-submenu__link:hover {
+  opacity: 0.6;
+}
+
+.site-submenu__link:active {
+  opacity: 0.3;
+}
+
+.site-menu__item--dropdown:hover .site-submenu {
+  width: 100%;
+  display: block;
+}
+
+/* _________________________ main */
+
+.main-content {
+  background-color: #fff;
+}
+
+.main-content__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000;
+}
+
+/* _________________________ breadcrumbs */
+
+.breadcrumbs {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item:last-child,
+.breadcrumbs__link {
+  color: #000;
+  opacity: 0.3;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__link:active {
+  opacity: 0.1;
+}
+
+/* _________________________ filters */
+
+.filters {
+  font: inherit;
+  color: #000;
+  background-color: #efefef;
+}
+
+.filters-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filters-form__legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000;
+}
+
+.filters-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filters-form__input:disabled + .filters-form__label {
+  color: #a6a6a6;
+}
+
+.filters-form__button {
+  width: 200px;
+  height: 40px;
+}
+
+/* _________________________ button */
+
+.button {
+  display: block;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 3.6px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px, transparent 40px);
+}
+
+.button:hover {
+  background-color: #f0c52e;
+}
+
+.button:active {
+  background-color: #f0c52e;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* _________________________ products__items */
+
+.products__items {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* _________________________ gadget */
+
+.gadget__image {
+  background-color: #efefef;
+}
+
+.gadget__title-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000;
+}
+
+.gadget__title-link:hover {
+  opacity: 0.6;
+}
+
+.gadget__title-link:active {
+  opacity: 0.3;
+}
+
+.gadget__price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #464646;
+}
+
+.gadget__basket-button {
+  width: 200px;
+  height: 40px;
+}
+
+.compare-button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  background: transparent;
+}
+
+.compare-button:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.compare-button:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* _________________________ about */
+
+.about__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000;
+}
+
+.about__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about__item {
+  position: relative;
+  padding-left: 34px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.16px;
+  color: #000;
+}
+
+.about__item::before {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  content: "";
+}
+
+.about__button {
+  width: 260px;
+  height: 40px;
+}
+
+/* _________________________ button-link */
+
+.button-link {
+  display: block;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 3.6px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px, transparent 40px);
+}
+
+.button-link:hover {
+  background-color: #f0c52e;
+}
+
+.button-link:active {
+  background-color: #f0c52e;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* _________________________ contacts */
+
+.contacts__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000;
+}
+
+.contacts__button {
+  width: 260px;
+  height: 40px;
+}
+
+/* _________________________ footer */
+
+.page-footer {
+  color: #fff;
+  background-color: #464646;
+}
+
+/* _________________________ logo-device */
+
+.page-footer .logo-device__image {
+  fill: #ffc600;
+}
+
+/* _________________________ site-menu */
+
+.page-footer .site-menu__link {
+  color: #fff;
+}
+
+/* _________________________ user-menu */
+
+.page-footer .user-menu__link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.page-footer .user-menu__link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.page-footer .user-menu__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer .user-menu__image {
+  fill: #ffc600;
+}
+
+/* _________________________ address */
+
+.page-footer .address {
+  font-style: normal;
+}
+
+.page-footer .address__tel-link {
+  color: #fff;
+}
+
+.page-footer .address__tel-link:hover {
+  opacity: 0.6;
+}
+
+.page-footer .address__tel-link:active {
+  opacity: 0.3;
+}
+
+/* _________________________ socials */
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.socials__link:hover {
+  opacity: 0.6;
+}
+
+.socials__link:active {
+  opacity: 0.1;
+}
+
+.socials__link--facebook {
+  background: url("../img/facebook.svg") no-repeat;
+}
+
+.socials__link--instagram {
+  background: url("../img/instagram.svg") no-repeat;
+}
+
+.socials__link--twitter {
+  background: url("../img/twitter.svg") no-repeat;
+}
+
+/* _________________________ logo-htmlacademy */
+
+.logo-htmlacademy:hover {
+  opacity: 0.6;
+}
+
+.logo-htmlacademy:active {
+  opacity: 0.3;
+}
+
+.logo-htmlacademy__image {
+  fill: #ffc600;
+}
