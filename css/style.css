@@ -110,21 +110,28 @@ img {
   position: relative;
   width: 440px;
   height: 50px;
+  font-size: 0;
 }
 
 .search-form__label {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
-  width: 20px;
-  height: 30px;
-  padding: 10px;
+  width: 40px;
+  height: 50px;
+  font-size: 15px;
+}
+
+.search-form__image {
+  margin: 17px 12px;
 }
 
 .search-form__input {
   padding: 0 5px 0 40px;
   width: 355px;
-  height: 46px;
-  font: inherit;
+  height: 48px;
+  font-size: 15px;
   color: #000000;
   background-color: transparent;
   border: none;
@@ -141,16 +148,16 @@ img {
   opacity: 1;
 }
 
-.search-form__input:focus ~ .search-form__button {
+.search-form__input:focus + .search-form__button {
   visibility: visible;
 }
 
 .search-form__button {
-  position: absolute;
   width: 81px;
-  height: 46px;
+  height: 50px;
   border: 2px solid #000000;
   margin-left: 0;
+  font-size: 15px;
   background-color: transparent;
   visibility: hidden;
 }
