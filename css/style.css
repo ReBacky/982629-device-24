@@ -47,6 +47,7 @@
 body {
   /*Позиционирование*/
   /*Блочная модель*/
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   /*Типографика*/
@@ -84,10 +85,10 @@ img {
   overflow: hidden;
 }
 
-/* _________________________ header */
+/* __________________________________________________ header */
 
 .page-header {
-  background-color: #f7e296;
+  background-image: linear-gradient(to bottom, transparent, transparent 40px, #f7e296 40px, #f7e296 226px);
 }
 
 /* _________________________ logo-device */
@@ -108,7 +109,6 @@ img {
 
 .search-form {
   position: relative;
-  width: 440px;
   height: 50px;
   font-size: 0;
 }
@@ -118,19 +118,19 @@ img {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 40px;
+  width: 38px;
   height: 50px;
   font-size: 15px;
 }
 
 .search-form__image {
-  margin: 17px 12px;
+  margin: 18px 0 0 3px;
 }
 
 .search-form__input {
-  padding: 0 5px 0 40px;
+  padding: 0 4px 0 38px;
   width: 355px;
-  height: 48px;
+  height: 50px;
   font-size: 15px;
   color: #000000;
   background-color: transparent;
@@ -144,6 +144,7 @@ img {
 }
 
 .search-form__input:focus {
+  outline: none;
   border-bottom: 2px solid #000;
   opacity: 1;
 }
@@ -153,7 +154,8 @@ img {
 }
 
 .search-form__button {
-  width: 81px;
+  position: absolute;
+  width: 85px;
   height: 50px;
   border: 2px solid #000000;
   margin-left: 0;
@@ -183,6 +185,22 @@ img {
   list-style: none;
 }
 
+.user-menu__item {
+  padding: 0 20px;
+}
+
+.user-menu__item:last-child {
+  padding-right: 0;
+}
+
+.user-menu__item.user-menu__item--logout {
+  padding: 0;
+}
+
+.user-menu__image {
+  padding-right: 9px;
+}
+
 .user-menu__link {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -196,6 +214,7 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.user-menu__link--logout,
 .user-menu__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -215,8 +234,7 @@ img {
 
 /* _________________________ site-menu */
 
-.site-menu,
-.site-submenu {
+.site-menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -240,23 +258,32 @@ img {
   opacity: 0.3;
 }
 
+.site-menu__item {
+  padding: 0 20px;
+}
+
 .site-menu__item--dropdown {
   position: relative;
 }
 
 .site-submenu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: auto;
+  left: -60px;
+  margin: 0;
+  padding: 17px 480px 33px 60px;
+  width: 620px;
+  height: 110px;
   background-color: #f7e296;
   display: none;
+  list-style: none;
 }
 
 .site-submenu__link {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 36px;
   letter-spacing: 0.15px;
   color: #000;
 }
@@ -270,11 +297,17 @@ img {
 }
 
 .site-menu__item--dropdown:hover .site-submenu {
-  width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-/* _________________________ main */
+.site-submenu__item:nth-last-child(2) {
+  flex: 0 0 66%;
+}
+
+/* __________________________________________________ main */
 
 .main-content {
   background-color: #fff;
@@ -524,7 +557,7 @@ img {
   height: 40px;
 }
 
-/* _________________________ footer */
+/* __________________________________________________ footer */
 
 .page-footer {
   color: #fff;
@@ -553,6 +586,7 @@ img {
   color: rgba(255, 255, 255, 1);
 }
 
+.page-footer .user-menu__link--logout,
 .page-footer .user-menu__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -626,4 +660,74 @@ img {
 
 .logo-htmlacademy__image {
   fill: #ffc600;
+}
+
+/* __________________________________________________ header flex grids */
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1040px;
+  height: 190px;
+  margin: 0 auto;
+  padding: 0 60px 36px 60px;
+}
+
+.page-header__logo {
+  align-self: flex-start;
+  margin: 22px 877px 0 0;
+  height: 35px;
+}
+
+.search-form {
+  flex: 0 1 50%;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 1 50%;
+  height: 50px;
+}
+
+.user-menu__item:first-child {
+  flex-grow: 1;
+}
+
+.user-menu__item.user-menu__item--user {
+  flex-grow: 0;
+}
+
+.user-menu__item.user-menu__item--logout {
+  flex-grow: 1;
+}
+
+.page-header__nav {
+  flex: 1 0 100%;
+  align-self: flex-end;
+  height: 50px;
+}
+
+.site-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: inherit;
+}
+
+.site-menu__item:first-child {
+  flex: 0 1 50%;
+  padding: 0;
+}
+
+.site-menu__item:nth-last-child(2) {
+  flex-grow: 1;
+}
+
+.site-menu__item:last-child {
+  margin-right: -3.6px; /*грязный хак, компенсирую letter-spacing*/
+  padding: 0;
 }
