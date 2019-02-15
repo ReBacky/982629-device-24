@@ -706,7 +706,7 @@ img {
 }
 
 .page-header__nav {
-  flex: 1 0 100%;
+  flex: 1 0 1043.6px; /* хак, компенсирую letter-spacing 3.6px */
   align-self: flex-end;
   height: 50px;
 }
@@ -728,6 +728,5 @@ img {
 }
 
 .site-menu__item:last-child {
-  margin-right: -3.6px; /*грязный хак, компенсирую letter-spacing*/
   padding: 0;
 }
