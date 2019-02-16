@@ -595,21 +595,23 @@ img {
   fill: #ffc600;
 }
 
-/* _________________________ address */
+/* _________________________ address & tel */
 
-.page-footer .address {
+.page-footer__address,
+.page-footer__tel {
   font-style: normal;
+  letter-spacing: normal;
 }
 
-.page-footer .address__tel-link {
+.page-footer__tel-link {
   color: #fff;
 }
 
-.page-footer .address__tel-link:hover {
+.page-footer__tel-link:hover {
   opacity: 0.6;
 }
 
-.page-footer .address__tel-link:active {
+.page-footer__tel-link:active {
   opacity: 0.3;
 }
 
@@ -729,4 +731,81 @@ img {
 
 .site-menu__item:last-child {
   padding: 0;
+}
+
+/* __________________________________________________ footer flex grids */
+
+.page-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 193px;
+  margin: 0 auto;
+  padding: 65px 20px;
+}
+
+.page-footer__logo {
+  align-self: flex-start;
+  flex-basis: 50%;
+  height: 50px;
+}
+
+.page-footer__user-menu {
+  flex-basis: 50%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-self: flex-start;
+  height: 50px;
+}
+
+.page-footer__user-menu .user-menu__item {
+  flex-grow: 0;
+}
+
+.page-footer__user-menu .user-menu__item--user {
+  padding-left: 0;
+}
+
+.page-footer__address,
+.page-footer__tel {
+  padding: 0;
+  flex-basis: 25%;
+  height: 60px;
+}
+
+.page-footer__site-menu {
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 50%;
+  height: 60px;
+}
+
+.page-footer__site-menu .site-menu__item {
+  flex: 0 0 auto;
+  padding: 0 15px;
+}
+
+.page-footer__tel {
+  text-align: right;
+}
+
+.page-footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+  padding-left: 27px;
+  height: 50px;
+}
+
+.page-footer__socials .socials__item {
+  padding: 0 11px;
+  height: 33px;
+}
+
+.logo-htmlacademy {
+  align-self: flex-end;
+  height: 34px;
 }
