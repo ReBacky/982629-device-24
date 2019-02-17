@@ -475,6 +475,7 @@ img {
 /* _________________________ about */
 
 .about__title {
+  margin: 50px 0 40px 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -485,7 +486,7 @@ img {
 
 .about__list {
   margin: 0;
-  padding-left: 0;
+  padding: 50px 0;
   list-style: none;
 }
 
@@ -544,12 +545,17 @@ img {
 /* _________________________ contacts */
 
 .contacts__title {
+  margin: 50px 0 40px 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000;
+}
+
+.contacts__map-link {
+  margin: 20px 0;
 }
 
 .contacts__button {
@@ -733,6 +739,40 @@ img {
   padding: 0;
 }
 
+/* __________________________________________________ main flex grids */
+
+/* _________________________ main-content__info flex grids */
+
+.main-content__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+  padding: 0 20px;
+  width: 1160px;
+  min-height: 570px;
+}
+
+.main-content__about,
+.main-content__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 50%;
+}
+
+.main-content__about {
+  padding-right: 40px;
+}
+
+.about__text {
+  width: 485px;
+}
+
+.about__button,
+.contacts__button {
+  margin-top: auto;
+}
+
 /* __________________________________________________ footer flex grids */
 
 .page-footer__inner {
@@ -747,13 +787,13 @@ img {
 }
 
 .page-footer__logo {
+  flex-basis: content;
   align-self: flex-start;
-  flex-basis: 50%;
-  height: 50px;
+  height: 35px;
 }
 
 .page-footer__user-menu {
-  flex-basis: 50%;
+  flex-basis: 997px;
   justify-content: flex-end;
   align-items: flex-start;
   align-self: flex-start;
