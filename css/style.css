@@ -307,13 +307,9 @@ img {
   top: 24px;
   left: -60px;
   margin: 0;
-  padding: 20px 480px 33px 60px;
+  padding: 20px 480px 35px 60px;
   width: 620px;
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  height: 108px;
   background-color: #f7e296;
   visibility: hidden;
   opacity: 0;
@@ -349,10 +345,6 @@ img {
 .site-submenu__link:not([href]),
 .site-submenu__link:active {
   opacity: 0.3;
-}
-
-.site-submenu__item:nth-last-child(2) {
-  flex: 0 0 66%;
 }
 
 /* __________________________________________________ main */
@@ -815,7 +807,21 @@ img {
 }
 
 .site-menu__item:last-child {
-  margin: 0;
+  margin: 0 -3.6px 0 0; /* компенсирует letter-spacing */
+}
+
+.site-submenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.site-submenu__item:nth-child(5n) {
+  flex: 0 0 calc(100% - 36px);
+}
+
+.site-submenu__item:nth-child(6n) {
+  flex: 0 0 100%;
 }
 
 /* __________________________________________________ main flex grids */
