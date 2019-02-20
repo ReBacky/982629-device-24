@@ -486,12 +486,44 @@ img {
   list-style: none;
 }
 
+.products__item {
+  margin: 0 40px 45px 0;
+}
+
+.products__item:nth-child(2n) {
+  margin-right: 0;
+}
+
 /* _________________________ gadget */
+
+.gadget {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  width: 360px;
+}
 
 .gadget__image {
   background-color: #efefef;
 }
 
+.gadget__image-link {
+  margin-bottom: 30px;
+  line-height: 0;
+}
+
+.gadget__title {
+  width: 260px;
+}
+
+.gadget__title,
+.gadget__price {
+  margin: 0;
+  padding: 0;
+}
+
+.gadget__title,
 .gadget__title-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -510,6 +542,7 @@ img {
 }
 
 .gadget__price {
+  margin-left: auto;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -518,7 +551,29 @@ img {
   color: #464646;
 }
 
+.gadget__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.gadget__image-link:hover ~ .gadget__cover,
+.gadget__cover:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
 .gadget__basket-button {
+  margin-bottom: 25px;
   width: 200px;
   height: 40px;
 }
@@ -646,12 +701,6 @@ img {
   fill: #ffc600;
 }
 
-/* _________________________ site-menu */
-
-.page-footer .site-menu__link {
-  color: #fff;
-}
-
 /* _________________________ user-menu */
 
 .page-footer .user-menu__link {
@@ -675,8 +724,14 @@ img {
 
 .page-footer__address,
 .page-footer__tel {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   letter-spacing: normal;
+}
+
+.page-footer__tel {
+  text-align: right;
 }
 
 .page-footer__tel-link {
@@ -691,12 +746,28 @@ img {
   opacity: 0.3;
 }
 
+/* _________________________ site-menu */
+
+.page-footer .site-menu__link {
+  line-height: 34px;
+  color: #fff;
+}
+
+.page-footer .site-menu__link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer .site-menu__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* _________________________ socials */
 
 .socials {
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 0;
 }
 
 .socials__link {
@@ -727,6 +798,10 @@ img {
 }
 
 /* _________________________ logo-htmlacademy */
+
+.logo-htmlacademy {
+  line-height: 0;
+}
 
 .logo-htmlacademy:hover {
   opacity: 0.6;
@@ -912,7 +987,6 @@ img {
 .products__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 760px;
 }
 
@@ -932,55 +1006,38 @@ img {
   margin: 0 auto;
   padding: 65px 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   width: 1160px;
-  min-height: 193px;
+  min-height: 192px;
 }
 
-.page-footer__logo {
-  flex-basis: content;
-  align-self: flex-start;
+.page-footer__row {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 64px;
 }
 
-.page-footer__user-menu {
-  flex-basis: 997px;
+.page-footer__row:last-child {
+  align-items: flex-end;
+}
+
+.page-footer .user-menu {
   justify-content: flex-end;
-  align-items: flex-start;
   align-self: flex-start;
-  min-height: 50px;
-}
-
-.page-footer__user-menu .user-menu__item {
-  flex-grow: 0;
-}
-
-.page-footer__user-menu .user-menu__item--user {
-  padding-left: 0;
+  flex: 0 0 content;
 }
 
 .page-footer__address,
 .page-footer__tel {
-  padding: 0;
-  flex-basis: 25%;
-  min-height: 60px;
+  flex: 0 0 20%;
 }
-
 .page-footer__site-menu {
   justify-content: center;
-  align-items: flex-start;
-  flex-basis: 50%;
-  min-height: 60px;
-}
-
-.page-footer__site-menu .site-menu__item {
   flex: 0 0 auto;
-  margin: 0 15px;
 }
 
-.page-footer__tel {
-  text-align: right;
+.page-footer .site-menu__item {
+  margin: 0 18px;
 }
 
 .page-footer__socials {
@@ -989,15 +1046,9 @@ img {
   align-items: flex-end;
   flex-grow: 1;
   padding-left: 27px;
-  min-height: 50px;
 }
 
 .page-footer__socials .socials__item {
   padding: 0 11px;
   min-height: 33px;
-}
-
-.logo-htmlacademy {
-  align-self: flex-end;
-  height: 34px;
 }
