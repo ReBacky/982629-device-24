@@ -298,6 +298,7 @@ img {
   height: 16px;
 }
 
+.site-menu__item--dropdown:hover .site-menu__link--dropdown::after,
 .site-menu__link--dropdown:hover::after {
   background-color: transparent;
 }
@@ -595,6 +596,125 @@ img {
 
 .compare-button:active {
   color: rgba(0, 0, 0, 0.2);
+}
+
+/* _________________________ catalog */
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.catalog__link {
+  display: block;
+  width: 160px;
+  min-height: 160px;
+  background-image: linear-gradient(to bottom, #f7e296, #f7e296 160px, transparent 160px, transparent 100%);
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  background-image: linear-gradient(to bottom, #f0c52e, #f0c52e 160px, transparent 160px, transparent 100%);
+}
+
+.catalog__link:active .catalog__subtitle {
+  opacity: 0.3;
+}
+
+.catalog__subtitle {
+  padding-top: 195px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000;
+}
+
+.catalog__item:nth-child(1) .catalog__subtitle {
+  background-image: url("../img/catalog-1.svg");
+  background-repeat: no-repeat;
+  background-position: 31px 52px;
+}
+
+.catalog__item:nth-child(2) .catalog__subtitle {
+  background-image: url("../img/catalog-2.svg");
+  background-repeat: no-repeat;
+  background-position: 38px 43px;
+}
+
+.catalog__item:nth-child(3) .catalog__subtitle {
+  background-image: url("../img/catalog-3.svg");
+  background-repeat: no-repeat;
+  background-position: 49px 38px;
+}
+
+.catalog__item:nth-child(4) .catalog__subtitle {
+  background-image: url("../img/catalog-4.svg");
+  background-repeat: no-repeat;
+  background-position: 28px 50px;
+}
+
+.catalog__item:nth-child(5) .catalog__subtitle {
+  background-image: url("../img/catalog-5.svg");
+  background-repeat: no-repeat;
+  background-position: 55px 32px;
+}
+
+.catalog__item:nth-child(6) .catalog__subtitle {
+  background-image: url("../img/catalog-6.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 49px;
+}
+
+/* _________________________ brands */
+
+.brands__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brands__item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.brands__link {
+  display: block;
+  width: 260px;
+  height: 100px;
+}
+
+.brands__link--dji {
+  background-image: url("../img/logo-dji-gray.png");
+}
+
+.brands__link--spg {
+  background-image: url("../img/logo-spg-gray.png");
+}
+
+.brands__link--gopro {
+  background-image: url("../img/logo-gopro-gray.png");
+}
+
+.brands__link--vive {
+  background-image: url("../img/logo-vive-gray.png");
+}
+
+.brands__image {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.brands__link:hover .brands__image,
+.brands__link:focus .brands__image {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* _________________________ about */
@@ -899,9 +1019,35 @@ img {
   flex: 0 0 100%;
 }
 
-/* __________________________________________________ main flex grids */
+/* __________________________________________________ main-content flex grids */
 
-/* _________________________ main-content__info flex grids */
+/* _________________________ main-content__catalog */
+
+.main-content__catalog {
+  margin: 80px auto;
+  padding: 0 20px;
+  width: 1160px;
+  min-height: 100px;
+}
+
+.catalog__list {
+  display: flex;
+}
+
+/* _________________________ main-content__brands */
+
+.main-content__brands {
+  margin: 80px auto;
+  padding: 0 20px;
+  width: 1160px;
+  min-height: 100px;
+}
+
+.brands__list {
+  display: flex;
+}
+
+/* _________________________ main-content__info */
 
 .main-content__info {
   display: flex;
@@ -933,7 +1079,7 @@ img {
   margin-top: auto;
 }
 
-/* _________________________ main-content__header flex grids */
+/* _________________________ main-content__header */
 
 .main-content__header {
   margin: 0 auto;
@@ -946,9 +1092,7 @@ img {
   display: flex;
 }
 
-/* _________________________ main-content__inner flex grids */
-
-.main-content__inner {
+.main-content__container {
   display: flex;
 }
 
