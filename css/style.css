@@ -364,8 +364,9 @@ img {
 
 .gadgets-slider__switches-list {
   position: absolute;
-  top: 315px;
+  bottom: 145px;
   right: 80px;
+  z-index: 1;
   margin: 0;
   padding: 0;
   display: flex;
@@ -1101,7 +1102,6 @@ img {
 }
 
 .gadgets-slider__item {
-  position: absolute;
   display: flex;
 }
 
