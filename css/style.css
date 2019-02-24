@@ -743,6 +743,7 @@ img {
 
 .filters__title,
 .sort__title {
+  margin-right: 35px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -815,6 +816,74 @@ img {
   font: inherit;
   color: #000;
   background-image: linear-gradient(to bottom, #ebebeb, #ebebeb 70px, #fff 70px, #fff 100%);
+}
+
+.sort__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort__item {
+  margin: 0 15px;
+}
+
+.sort__link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.14px;
+  color: #000;
+  opacity: 0.3;
+}
+
+.sort__link:hover {
+  opacity: 0.6;
+}
+
+.sort__link--current,
+.sort__link:active {
+  opacity: 1;
+}
+
+.choice {
+  margin-left: auto;
+}
+
+.choice__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.choice__item:first-child {
+  margin-right: 19px;
+}
+
+.choice__link {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid #000;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.choice__link--ascending {
+  border-top-width: 0;
+  border-top-color: transparent;
+  border-bottom-width: 10px;
+}
+
+.choice__link--descending {
+  border-top-width: 10px;
+  border-bottom-width: 0;
+  border-bottom-color: transparent;
+}
+
+.choice__link--current {
+  opacity: 0.2;
 }
 
 /* _________________________ products__items */
@@ -1310,7 +1379,7 @@ img {
   width: 760px;
 }
 
-/* _________________________ products__header */
+/* _________________________ main-content__products */
 
 .products__header {
   display: flex;
@@ -1318,6 +1387,13 @@ img {
   margin-bottom: 70px;
   width: 760px;
   min-height: 70px;
+}
+
+.products__sort,
+.sort__items,
+.choice__items {
+  display: flex;
+  align-items: center;
 }
 
 /* __________________________________________________ footer flex grids */
