@@ -1005,6 +1005,68 @@ img {
   color: rgba(0, 0, 0, 0.2);
 }
 
+/* _________________________ pagination */
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ebebeb;
+}
+
+.pagination__item {
+  margin: 0 15px;
+}
+
+.pagination__item:first-child {
+  margin: 0 auto 0 0;
+  min-width: 150px;
+}
+
+.pagination__item:last-child {
+  margin: 0 0 0 auto;
+  min-width: 150px;
+  text-align: right;
+}
+
+.pagination__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination__link:active,
+.pagination__link--current {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__item:first-child .pagination__link,
+.pagination__item:last-child .pagination__link {
+  display: inline-block;
+  padding: 0 30px;
+  line-height: 70px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__item:first-child .pagination__link:hover,
+.pagination__item:last-child .pagination__link:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination__item:first-child .pagination__link:active,
+.pagination__item:last-child .pagination__link:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* __________________________________________________ footer */
 
 .page-footer {
@@ -1379,7 +1441,7 @@ img {
   width: 760px;
 }
 
-/* _________________________ main-content__products */
+/* _________________________ products__header */
 
 .products__header {
   display: flex;
@@ -1394,6 +1456,17 @@ img {
 .choice__items {
   display: flex;
   align-items: center;
+}
+
+/* _________________________ products__pagination */
+
+.products__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 760px;
+  min-height: 70px;
 }
 
 /* __________________________________________________ footer flex grids */
