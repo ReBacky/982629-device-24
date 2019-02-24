@@ -181,24 +181,28 @@
         </ul>
       </section>
       <section class="main-content__services services">
-        <h2 class="visually-hidden">Сервисы</h2>
-        <ul class="services__list">
-          <li class="services__item"><a class="services__link" href="#delivery">Доставка</a></li>
-          <li class="services__item"><a class="services__link" href="#warranty">Гарантия</a></li>
-          <li class="services__item"><a class="services__link" href="#credit">Кредит</a></li>
-        </ul>
-        <section id="delivery" class="services__tab">
-          <h3 class="services__title">Доставка</h3>
-          <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </section>
-        <section id="warranty" class="services__tab">
-          <h3 class="services__title">Гарантия</h3>
-          <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </section>
-        <section id="credit" class="services__tab">
-          <h3 class="services__title">Кредит</h3>
-          <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
+        <div class="services__col">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <ul class="services__list">
+            <li class="services__item"><button class="button services__button services__button--current" type="button">Доставка</button></li>
+            <li class="services__item"><button class="button services__button" type="button">Гарантия</button></li>
+            <li class="services__item"><button class="button services__button" type="button">Кредит</button></li>
+          </ul>
+        </div>
+        <div class="services__col">
+          <section class="services__tab">
+            <h3 class="services__title">Доставка</h3>
+            <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </section>
+          <section class="services__tab services__tab--hidden">
+            <h3 class="services__title">Гарантия</h3>
+            <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </section>
+          <section class="services__tab services__tab--hidden">
+            <h3 class="services__title">Кредит</h3>
+            <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </section>
+        </div>
       </section>
       <section class="main-content__brands brands">
         <h2 class="visually-hidden">Бренды наших товаров</h2>
