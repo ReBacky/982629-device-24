@@ -1268,7 +1268,7 @@ img {
 .page-footer .user-menu {
   justify-content: flex-end;
   align-self: flex-start;
-  flex: 0 0 content;
+  flex: 0 0 auto;
 }
 
 .page-footer__address,
