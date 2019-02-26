@@ -1502,7 +1502,6 @@ img {
 .page-footer__site-menu {
   justify-content: center;
   flex: 0 0 auto;
-  flex: none;
 }
 
 .page-footer .site-menu__item {
