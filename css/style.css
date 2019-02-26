@@ -466,37 +466,37 @@ img {
   color: #000;
 }
 
-.catalog__item:nth-child(1) .catalog__subtitle {
+.catalog__subtitle--vr {
   background-image: url("../img/catalog-1.svg");
   background-repeat: no-repeat;
   background-position: 31px 52px;
 }
 
-.catalog__item:nth-child(2) .catalog__subtitle {
+.catalog__subtitle--monopods-for-selfie {
   background-image: url("../img/catalog-2.svg");
   background-repeat: no-repeat;
   background-position: 38px 43px;
 }
 
-.catalog__item:nth-child(3) .catalog__subtitle {
+.catalog__subtitle--action-cameras {
   background-image: url("../img/catalog-3.svg");
   background-repeat: no-repeat;
   background-position: 49px 38px;
 }
 
-.catalog__item:nth-child(4) .catalog__subtitle {
+.catalog__subtitle--fitness-bracelets {
   background-image: url("../img/catalog-4.svg");
   background-repeat: no-repeat;
   background-position: 28px 50px;
 }
 
-.catalog__item:nth-child(5) .catalog__subtitle {
+.catalog__subtitle--smart-watch {
   background-image: url("../img/catalog-5.svg");
   background-repeat: no-repeat;
   background-position: 55px 32px;
 }
 
-.catalog__item:nth-child(6) .catalog__subtitle {
+.catalog__subtitle--quadcopters {
   background-image: url("../img/catalog-6.svg");
   background-repeat: no-repeat;
   background-position: 13px 49px;
@@ -1293,11 +1293,11 @@ img {
 }
 
 .gadgets-slider__item {
-  display: flex;
+  display: none;
 }
 
-.gadgets-slider__item--hidden {
-  display: none;
+.gadgets-slider__item--visible {
+  display: flex;
 }
 
 .gadgets-slider__col {
