@@ -120,7 +120,7 @@ img {
 
 .search-form__label {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 1;
   width: 38px;
@@ -133,6 +133,9 @@ img {
 }
 
 .search-form__input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 0 4px 0 38px;
   width: 355px;
   height: 50px;
@@ -160,6 +163,8 @@ img {
 
 .search-form__button {
   position: absolute;
+  bottom: 0;
+  left: 355px;
   width: 85px;
   height: 50px;
   border: 2px solid #000000;
@@ -461,37 +466,37 @@ img {
   color: #000;
 }
 
-.catalog__item:nth-child(1) .catalog__subtitle {
+.catalog__subtitle--vr {
   background-image: url("../img/catalog-1.svg");
   background-repeat: no-repeat;
   background-position: 31px 52px;
 }
 
-.catalog__item:nth-child(2) .catalog__subtitle {
+.catalog__subtitle--monopods-for-selfie {
   background-image: url("../img/catalog-2.svg");
   background-repeat: no-repeat;
   background-position: 38px 43px;
 }
 
-.catalog__item:nth-child(3) .catalog__subtitle {
+.catalog__subtitle--action-cameras {
   background-image: url("../img/catalog-3.svg");
   background-repeat: no-repeat;
   background-position: 49px 38px;
 }
 
-.catalog__item:nth-child(4) .catalog__subtitle {
+.catalog__subtitle--fitness-bracelets {
   background-image: url("../img/catalog-4.svg");
   background-repeat: no-repeat;
   background-position: 28px 50px;
 }
 
-.catalog__item:nth-child(5) .catalog__subtitle {
+.catalog__subtitle--smart-watch {
   background-image: url("../img/catalog-5.svg");
   background-repeat: no-repeat;
   background-position: 55px 32px;
 }
 
-.catalog__item:nth-child(6) .catalog__subtitle {
+.catalog__subtitle--quadcopters {
   background-image: url("../img/catalog-6.svg");
   background-repeat: no-repeat;
   background-position: 13px 49px;
@@ -1015,7 +1020,7 @@ img {
 }
 
 .pagination__item {
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .pagination__item:first-child {
@@ -1030,11 +1035,11 @@ img {
 }
 
 .pagination__link {
+  padding: 0 10px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 3.2px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1052,6 +1057,7 @@ img {
 .pagination__item:last-child .pagination__link {
   display: inline-block;
   padding: 0 30px;
+  letter-spacing: 3.2px;
   line-height: 70px;
   color: rgba(0, 0, 0, 1);
 }
@@ -1199,12 +1205,8 @@ img {
 .page-header {
   position: relative;
   width: 1040px;
-  min-height: 106px;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 53px;
   margin: 0 auto;
-  padding: 70px 60px 50px;
+  padding: 72px 60px 50px;
 }
 
 .page-header__logo {
@@ -1213,11 +1215,13 @@ img {
   left: 60px;
 }
 
-.page-header__row,
+.page-header__row {
+  display: flex;
+}
+
 .page-header__nav {
   display: flex;
-  flex-basis: 53px;
-  align-items: flex-end;
+  padding-top: 30px;
 }
 
 .search-form {
@@ -1290,11 +1294,11 @@ img {
 }
 
 .gadgets-slider__item {
-  display: flex;
+  display: none;
 }
 
-.gadgets-slider__item--hidden {
-  display: none;
+.gadgets-slider__item--visible {
+  display: flex;
 }
 
 .gadgets-slider__col {
@@ -1473,25 +1477,21 @@ img {
 
 .page-footer__inner {
   margin: 0 auto;
-  padding: 65px 20px;
-  display: flex;
-  flex-direction: column;
+  padding: 45px 20px;
   width: 1160px;
-  min-height: 192px;
 }
 
 .page-footer__row {
   display: flex;
   justify-content: space-between;
-  flex-basis: 64px;
+  padding: 20px 0;
 }
 
-.page-footer__row:last-child {
-  align-items: flex-end;
+.page-footer__row:nth-child(2) {
+  padding: 10px 0 40px;
 }
 
 .page-footer__user-menu {
-  justify-content: flex-end;
   align-self: flex-start;
   flex: 0 0 auto;
 }
@@ -1506,6 +1506,7 @@ img {
 }
 
 .page-footer .site-menu__item {
+  flex: none;
   margin: 0 18px;
 }
 
