@@ -82,22 +82,22 @@
           <li class="breadcrumbs__item">Моноподы для селфи</li>
         </ul>
       </header>
-      <div class="main-content__inner">
+      <div class="main-content__container">
         <section class="main-content__filters filters">
           <header class="filters__header">
             <h2 class="visually-hidden">Отфильтровать по характеристикам моноподы</h2>
             <h3 class="filters__title">Фильтр:</h3>
           </header>
           <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
-            <!--<fieldset class="filters-form__fieldset">-->
-            <!--<legend class="filters-form__legend">Стоимость</legend>-->
-            <!--<label class="filters-form__cost filters-form__cost&#45;&#45;min" for="min">от-->
-            <!--<input name="toggle-min" type="text" value="0" id="min">-->
-            <!--</label>-->
-            <!--<label class="filters-form__cost filters-form__cost&#45;&#45;max" for="max">до-->
-            <!--<input name="toggle-max" type="text" value="5000" id="max">-->
-            <!--</label>-->
-            <!--</fieldset>-->
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__legend">Стоимость</legend>
+              <label class="filters-form__cost filters-form__cost--min" for="min">от
+                <input name="toggle-min" type="text" value="0" id="min">
+              </label>
+              <label class="filters-form__cost filters-form__cost--max" for="max">до
+               <input name="toggle-max" type="text" value="5000" id="max">
+              </label>
+            </fieldset>
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Цвет</legend>
               <ul class="filters-form__list">
@@ -144,19 +144,19 @@
             <h2 class="visually-hidden">Выбрать монопод</h2>
             <section class="products__sort sort">
               <h3 class="sort__title">Сортировка:</h3>
-              <!--<ul class="sort__items">-->
-              <!--<li class="sort__item"><a class="sort__link" href="#">По цене</a></li>-->
-              <!--<li class="sort__item"><a class="sort__link" href="#">По типу</a></li>-->
-              <!--<li class="sort__item"><a class="sort__link" href="#">По популярности</a></li>-->
-              <!--</ul>-->
+              <ul class="sort__items">
+                <li class="sort__item"><a class="sort__link sort__link--current" href="#">По цене</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По типу</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По популярности</a></li>
+              </ul>
             </section>
-            <!--<section class="products__choice choice">-->
-              <!--<h3 class="visually-hidden">Вид сортировки:</h3>-->
-              <!--<ul class="choice__items">-->
-              <!--<li class="choice__item choice__item&#45;&#45;ascending"><a class="choice__link" href="#"><span class="visually-hidden">По возрастанию</span></a></li>-->
-              <!--<li class="choice__item choice__item&#45;&#45;descending"><a class="choice__link" href="#"><span class="visually-hidden">По убыванию</span></a></li>-->
-              <!--</ul>-->
-            <!--</section>-->
+            <section class="products__choice choice">
+              <h3 class="visually-hidden">Вид сортировки:</h3>
+              <ul class="choice__items">
+                <li class="choice__item"><a class="choice__link choice__link--ascending choice__link--current" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li class="choice__item"><a class="choice__link choice__link--descending" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              </ul>
+            </section>
           </header>
           <ul class="products__items" aria-label="Список моноподов для селфи">
             <li class="products__item">
@@ -212,15 +212,13 @@
               </article>
             </li>
           </ul>
-          <!--<div class="products__pagination pagination">-->
-          <!--<ul class="pagination__list" aria-label="Пагинация">-->
-          <!--<li class="pagination__item pagination__item&#45;&#45;back"><a class="pagination__link" href="#">Назад</a></li>-->
-          <!--<li class="pagination__item"><a class="pagination__link pagination__link&#45;&#45;current" href="#">1</a></li>-->
-          <!--<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>-->
-          <!--<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>-->
-          <!--<li class="pagination__item pagination__item&#45;&#45;forward"><a class="pagination__link" href="#">Вперед</a></li>-->
-          <!--</ul>-->
-          <!--</div>-->
+          <ul class="products__pagination pagination" aria-label="Пагинация">
+            <li class="pagination__item"><a class="pagination__link" href="#">Назад</a></li>
+            <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#">1</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">Вперед</a></li>
+          </ul>
         </section>
       </div>
     </main>
