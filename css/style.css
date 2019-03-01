@@ -1015,7 +1015,7 @@ img {
 
 .sort__item {
   margin-right: 29px;
-  line-height: 0px;
+  line-height: 0;
 }
 
 .sort__link {
@@ -1079,8 +1079,8 @@ img {
 /* _________________________ products__items */
 
 .products__items {
-  margin: 0;
-  padding-left: 72px;
+  margin: 0 0 0 72px;
+  padding: 0;
   list-style: none;
 }
 
@@ -1099,7 +1099,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  position: relative;
   width: 360px;
 }
 
@@ -1652,7 +1651,7 @@ img {
 .products__items {
   display: flex;
   flex-wrap: wrap;
-  width: 832px;
+  width: 760px;
 }
 
 /* _________________________ products__header */
