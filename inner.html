@@ -91,16 +91,23 @@
           <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Стоимость</legend>
-              <label class="filters-form__cost filters-form__cost--min" for="min">от
-                <input name="toggle-min" type="text" value="0" id="min">
-              </label>
-              <label class="filters-form__cost filters-form__cost--max" for="max">до
-               <input name="toggle-max" type="text" value="5000" id="max">
-              </label>
+              <div class="filters-form__range-filter range-filter">
+                <div class="range-filter__controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle--min"><span class="visually-hidden">Минимальная стоимость</span></div>
+                  <div class="range-filter__toggle range-filter__toggle--max"><span class="visually-hidden">Максимальная стоимость</span></div>
+                </div>
+                <div class="range-filter__cost-controls">
+                  <label class="range-filter__cost range-filter__cost--min">от <input class="range-filter__cost-input" name="min-cost" type="text" value="0"></label>
+                  <label class="range-filter__cost range-filter__cost--max">до <input class="range-filter__cost-input" name="max-cost" type="text" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Цвет</legend>
-              <ul class="filters-form__list">
+              <ul class="filters-form__items color-gadgets">
                 <li class="filters-form__item">
                   <input class="filters-form__input" id="black" type="checkbox" name="black" checked>
                   <label class="filters-form__label" for="black">Черный</label>
@@ -125,7 +132,7 @@
             </fieldset>
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Bluetooth</legend>
-              <ul class="filters-form__list">
+              <ul class="filters-form__items bluetooth-availability">
                 <li class="filters-form__item">
                   <input class="filters-form__input" id="bluetooth-true" type="radio" name="bluetooth" value="true" checked>
                   <label class="filters-form__label" for="bluetooth-true">Есть</label>

@@ -879,7 +879,8 @@ img {
 
 .breadcrumbs__link {
   position: relative;
-  padding-right: 39px;
+  margin-right: 20px;
+  padding-right: 19px;
   font: inherit;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -888,7 +889,7 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  right: 21px;
+  right: 0;
   margin-top: -2px;
   width: 4px;
   height: 4px;
@@ -936,6 +937,10 @@ img {
 }
 
 .filters-form__legend {
+  position: relative;
+  margin-bottom: 25px;
+  padding-top: 11px;
+  width: 200px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -944,7 +949,17 @@ img {
   color: #000;
 }
 
-.filters-form__list {
+.filters-form__legend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.filters-form__items {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -959,6 +974,98 @@ img {
   height: 40px;
   cursor: pointer;
 }
+
+/* _________________________ range-filter */
+
+.range-filter {
+  margin-bottom: 60px;
+}
+
+.range-filter__controls {
+  position: relative;
+  padding: 9px 0;
+  height: 2px;
+}
+
+.range-filter__scale {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.range-filter__bar {
+  height: 2px;
+  width: 60%;
+  background-color: #91c92f;
+}
+
+.range-filter__toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-filter__toggle--min {
+  left: -6px;
+}
+
+.range-filter__toggle--max {
+  left: 107px;
+}
+
+.range-filter__cost-controls {
+  position: relative;
+  font-size: 0;
+}
+
+.range-filter__cost {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.range-filter__cost-input {
+  display: inline-block;
+  width: 40px;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+.range-filter__cost-input:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.range-filter__cost--min {
+  left: 0;
+}
+
+.range-filter__cost--max {
+  left: 107px;
+  margin-left: -20px;
+}
+
+/* _________________________ color-gadgets */
+
+
+
+/* _________________________ bluetooth-availability */
+
+
 
 /* _________________________ button */
 
@@ -992,7 +1099,7 @@ img {
 .products {
   font: inherit;
   color: #000;
-  background-image: linear-gradient(to bottom, #ebebeb, #ebebeb 70px, #fff 70px, #fff 100%);
+  background-color: #fff;
 }
 
 .sort__title {
