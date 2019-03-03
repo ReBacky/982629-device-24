@@ -1981,6 +1981,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.modal-map iframe {
+  border: none;
+}
+
 /* _________________________ modal-write */
 
 .modal-write {
