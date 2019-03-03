@@ -1976,7 +1976,81 @@ img {
 .modal-map {
   margin-top: -280px;
   width: 960px;
-  height: 559px;
+  height: 560px;
   background-image: url("../img/map-big.jpg");
   background-repeat: no-repeat;
+}
+
+/* _________________________ modal-write */
+
+.modal-write {
+  margin-top: -276px;
+  padding: 90px 100px 78px;
+  width: 760px;
+  background-color: #fff;
+}
+
+.write-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.write-form__col {
+  width: calc(50% - 20px);
+}
+
+.write-form__col:first-child {
+  margin-right: 40px;
+}
+
+.write-form__row {
+  width: 100%;
+}
+
+.write-form__label {
+  display: block;
+  margin-bottom: 10px;
+  vertical-align: center;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.write-form__input,
+.write-form__text {
+  margin-bottom: 30px;
+  padding: 13px 17px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  background-color: rgba(229, 229, 229, 0.5);
+  width: 100%;
+}
+
+.write-form__text {
+  margin-bottom: 45px;
+  resize: none;
+}
+
+.write-form__input:hover,
+.write-form__text:hover {
+  background-color: rgba(229, 229, 229, 0.8);
+}
+
+.write-form__input:focus,
+.write-form__text:focus {
+  border: 3px solid rgba(240, 197, 46, 0.5);
+  background-color: #fff;
+}
+
+.write-form__button {
+  width: 200px;
 }
