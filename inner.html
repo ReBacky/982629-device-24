@@ -91,47 +91,54 @@
           <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Стоимость</legend>
-              <label class="filters-form__cost filters-form__cost--min" for="min">от
-                <input name="toggle-min" type="text" value="0" id="min">
-              </label>
-              <label class="filters-form__cost filters-form__cost--max" for="max">до
-               <input name="toggle-max" type="text" value="5000" id="max">
-              </label>
+              <div class="filters-form__range-filter range-filter">
+                <div class="range-filter__controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle--min"><span class="visually-hidden">Минимальная стоимость</span></div>
+                  <div class="range-filter__toggle range-filter__toggle--max"><span class="visually-hidden">Максимальная стоимость</span></div>
+                </div>
+                <div class="range-filter__cost-controls">
+                  <label class="range-filter__cost range-filter__cost--min">от <input class="range-filter__cost-input" name="min-cost" type="text" value="0"></label>
+                  <label class="range-filter__cost range-filter__cost--max">до <input class="range-filter__cost-input" name="max-cost" type="text" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Цвет</legend>
-              <ul class="filters-form__list">
+              <ul class="filters-form__items color-gadgets">
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="black" type="checkbox" name="black" checked>
+                  <input class="filters-form__input visually-hidden" id="black" type="checkbox" name="black" checked>
                   <label class="filters-form__label" for="black">Черный</label>
                 </li>
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="white" type="checkbox" name="white">
+                  <input class="filters-form__input visually-hidden" id="white" type="checkbox" name="white">
                   <label class="filters-form__label" for="white">Белый</label>
                 </li>
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="blue" type="checkbox" name="blue" checked>
+                  <input class="filters-form__input visually-hidden" id="blue" type="checkbox" name="blue" checked>
                   <label class="filters-form__label" for="blue">Синий</label>
                 </li>
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="red" type="checkbox" name="red" checked>
+                  <input class="filters-form__input visually-hidden" id="red" type="checkbox" name="red" checked disabled>
                   <label class="filters-form__label" for="red">Красный</label>
                 </li>
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="pink" type="checkbox" name="pink" disabled>
+                  <input class="filters-form__input visually-hidden" id="pink" type="checkbox" name="pink" disabled>
                   <label class="filters-form__label" for="pink">Розовый</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Bluetooth</legend>
-              <ul class="filters-form__list">
+              <ul class="filters-form__items bluetooth-availability">
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="bluetooth-true" type="radio" name="bluetooth" value="true" checked>
+                  <input class="filters-form__input visually-hidden" id="bluetooth-true" type="radio" name="bluetooth" value="true" checked>
                   <label class="filters-form__label" for="bluetooth-true">Есть</label>
                 </li>
                 <li class="filters-form__item">
-                  <input class="filters-form__input" id="bluetooth-false" type="radio" name="bluetooth" value="false">
+                  <input class="filters-form__input visually-hidden" id="bluetooth-false" type="radio" name="bluetooth" value="false">
                   <label class="filters-form__label" for="bluetooth-false">Нет</label>
                 </li>
               </ul>
@@ -141,22 +148,24 @@
         </section>
         <section class="main-content__products products">
           <header class="products__header">
-            <h2 class="visually-hidden">Выбрать монопод</h2>
-            <section class="products__sort sort">
-              <h3 class="sort__title">Сортировка:</h3>
-              <ul class="sort__items">
-                <li class="sort__item"><a class="sort__link sort__link--current" href="#">По цене</a></li>
-                <li class="sort__item"><a class="sort__link" href="#">По типу</a></li>
-                <li class="sort__item"><a class="sort__link" href="#">По популярности</a></li>
-              </ul>
-            </section>
-            <section class="products__choice choice">
-              <h3 class="visually-hidden">Вид сортировки:</h3>
-              <ul class="choice__items">
-                <li class="choice__item"><a class="choice__link choice__link--ascending choice__link--current" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-                <li class="choice__item"><a class="choice__link choice__link--descending" href="#"><span class="visually-hidden">По убыванию</span></a></li>
-              </ul>
-            </section>
+            <div class="products__header-inner">
+              <h2 class="visually-hidden">Выбрать монопод</h2>
+              <section class="products__sort sort">
+                <h3 class="sort__title">Сортировка:</h3>
+                <ul class="sort__items">
+                  <li class="sort__item"><a class="sort__link sort__link--current" href="#">По цене</a></li>
+                  <li class="sort__item"><a class="sort__link" href="#">По типу</a></li>
+                  <li class="sort__item"><a class="sort__link" href="#">По популярности</a></li>
+                </ul>
+              </section>
+              <section class="products__choice choice">
+                <h3 class="visually-hidden">Вид сортировки:</h3>
+                <ul class="choice__items">
+                  <li class="choice__item"><a class="choice__link choice__link--ascending choice__link--current" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                  <li class="choice__item"><a class="choice__link choice__link--descending" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+                </ul>
+              </section>
+            </div>
           </header>
           <ul class="products__items" aria-label="Список моноподов для селфи">
             <li class="products__item">
@@ -178,7 +187,7 @@
                   <img class="gadget__image" src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с дополнительными функциями регулировки">
                 </a>
                 <h3 class="gadget__title"><a class="gadget__title-link" href="#">Профессиональная <br>селфи-палка</a></h3>
-                <p class="gadget__price">1500 руб.</p>
+                <p class="gadget__price">1 500 руб.</p>
                 <div class="gadget__cover">
                   <button class="gadget__basket-button button" type="button">В корзину</button>
                   <button class="gadget__compare-button compare-button" type="button">Добавить к сравнению</button>
@@ -191,7 +200,7 @@
                   <img class="gadget__image" src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка с рукоятью в виде поплавка">
                 </a>
                 <h3 class="gadget__title"><a class="gadget__title-link" href="#">Непотопляемая селфи-палка</a></h3>
-                <p class="gadget__price">2500 руб.</p>
+                <p class="gadget__price">2 500 руб.</p>
                 <div class="gadget__cover">
                   <button class="gadget__basket-button button" type="button">В корзину</button>
                   <button class="gadget__compare-button compare-button" type="button">Добавить к сравнению</button>
@@ -203,8 +212,8 @@
                 <a class="gadget__image-link">
                   <img class="gadget__image" src="img/item-4.jpg" width="360" height="380" alt="Оригинальная селфи-палка в виде руки">
                 </a>
-                <h3 class="gadget__title"><a class="gadget__title-link" href="#">Селфи-палка <br>«Следуй за мной»</a></h3>
-                <p class="gadget__price">4900 руб.</p>
+                <h3 class="gadget__title"><a class="gadget__title-link" href="#">Селфи-палка «Следуй за мной»</a></h3>
+                <p class="gadget__price">4 900 руб.</p>
                 <div class="gadget__cover">
                   <button class="gadget__basket-button button" type="button">В корзину</button>
                   <button class="gadget__compare-button compare-button" type="button">Добавить к сравнению</button>
