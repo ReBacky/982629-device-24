@@ -1126,6 +1126,7 @@ img {
 }
 
 .filters-form__input:active + .filters-form__label:active::before,
+.filters-form__input:active + .filters-form__label:active::after,
 .filters-form__input + .filters-form__label::before {
   opacity: 1;
 }
