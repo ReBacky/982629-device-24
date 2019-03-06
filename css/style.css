@@ -213,16 +213,12 @@ img {
 
 .user-menu {
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
   list-style: none;
 }
 
 .user-menu__item {
   margin: 0 20px;
-}
-
-.user-menu__item:first-child {
-  margin-left: 0;
 }
 
 .user-menu__item:last-child {
@@ -276,7 +272,7 @@ img {
 }
 
 .site-menu__item {
-  margin: 0 20px;
+  margin-left: 40px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -552,7 +548,7 @@ img {
   list-style: none;
 }
 
-.catalog__item:not(:last-child) {
+.catalog__item:not(:nth-child(6n)) {
   padding-right: 40px;
 }
 
@@ -738,7 +734,7 @@ img {
   list-style: none;
 }
 
-.brands__item:not(:last-child) {
+.brands__item:not(:nth-child(4n)) {
   padding-right: 40px;
 }
 
@@ -838,7 +834,7 @@ img {
 
 .about__button {
   width: 260px;
-  height: 40px;
+  min-height: 40px;
 }
 
 /* _________________________ button-link */
@@ -907,7 +903,7 @@ img {
 
 .contacts__button {
   width: 260px;
-  height: 40px;
+  min-height: 40px;
 }
 
 /* __________________________________________________ main inner.html*/
@@ -1050,7 +1046,7 @@ img {
 
 .filters-form__button {
   width: 200px;
-  height: 40px;
+  min-height: 40px;
   cursor: pointer;
 }
 
@@ -1294,6 +1290,7 @@ img {
 .choice__items {
   margin: 0;
   padding: 30px 0;
+  min-width: 43px;
   list-style: none;
 }
 
@@ -1477,7 +1474,7 @@ img {
 .gadget__basket-button {
   margin: 35px 0 15px;
   width: 200px;
-  height: 40px;
+  min-height: 40px;
   cursor: pointer;
 }
 
@@ -1751,6 +1748,8 @@ img {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .user-menu__item:first-child {
@@ -1775,6 +1774,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .page-header .site-menu {
@@ -1783,20 +1787,16 @@ img {
 
 .site-menu__item:first-child {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 50%;
-  flex: 0 1 50%;
+  -ms-flex: 0 1 500px;
+  flex: 0 1 500px;
   margin: 0;
 }
 
-.site-menu__item:nth-last-child(2) {
+.site-menu__item:nth-child(3) {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin-left: 15px;
-}
-
-.site-menu__item:last-child {
-  margin: 0 -3.6px 0 0; /* компенсирует letter-spacing */
+  margin-left: 35px;
 }
 
 .site-submenu {
@@ -1870,6 +1870,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* _________________________ main-content__services */
@@ -1916,6 +1918,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* _________________________ main-content__info */
@@ -2060,12 +2064,19 @@ img {
   width: 760px;
 }
 
-.products__sort,
+.products__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sort__items,
 .choice__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* _________________________ products__pagination */
@@ -2108,11 +2119,20 @@ img {
 }
 
 .page-footer__user-menu {
+  max-width: 50%;
   -ms-flex-item-align: start;
   align-self: flex-start;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page-footer__user-menu:first-child {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
 }
 
 .page-footer__address,
@@ -2120,14 +2140,19 @@ img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .page-footer__site-menu {
+  max-width: 60%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .page-footer .site-menu__item {
@@ -2151,7 +2176,9 @@ img {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-left: 27px;
+  padding: 0 100px 0 127px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .page-footer__socials::before {
