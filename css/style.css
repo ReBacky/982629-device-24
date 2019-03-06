@@ -325,6 +325,12 @@ img {
   list-style: none;
 }
 
+.site-menu__item--dropdown:hover .site-menu__link--dropdown::after,
+.site-menu__item--dropdown:focus-within .site-menu__link--dropdown::after {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .site-menu__item--dropdown:focus-within .site-submenu,
 .site-menu__link--dropdown:hover + .site-submenu,
 .site-menu__link--dropdown:focus + .site-submenu,
@@ -480,6 +486,7 @@ img {
 
 .gadgets-slider__text {
   margin: 0 0 42px;
+  padding-right: 80px;
   font: inherit;
 }
 
@@ -685,7 +692,7 @@ img {
 }
 
 .services__text {
-  width: 460px;
+  width: 435px;
   font: inherit;
 }
 
