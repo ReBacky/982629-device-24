@@ -2205,7 +2205,9 @@ img {
   display: block;
   line-height: 0;
   z-index: 2;
-  margin-left: -480px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
@@ -2263,7 +2265,6 @@ img {
 /* _________________________ modal-map */
 
 .modal-map {
-  margin-top: -280px;
   width: 960px;
   height: 560px;
   background-image: url("../img/map-big.jpg");
@@ -2277,7 +2278,6 @@ img {
 /* _________________________ modal-write */
 
 .modal-write {
-  margin-top: -276px;
   padding: 90px 100px 78px;
   width: 760px;
   background-color: #fff;
