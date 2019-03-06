@@ -149,7 +149,16 @@ img {
   opacity: 0.6;
 }
 
-.search-form__input:focus,
+.search-form__input:focus {
+  outline: none;
+  border-bottom: 2px solid #000;
+  opacity: 1;
+}
+
+.search-form__input::-ms-clear {
+  display: none;
+}
+
 .search-form:focus-within .search-form__input {
   outline: none;
   border-bottom: 2px solid #000;
@@ -172,7 +181,12 @@ img {
   cursor: pointer;
 }
 
-.search-form__input:focus + .search-form__button,
+.search-form__input:focus + .search-form__button {
+  outline: none;
+  visibility: visible;
+  opacity: 1;
+}
+
 .search-form:focus-within .search-form__button {
   outline: none;
   visibility: visible;
@@ -184,11 +198,15 @@ img {
   background-color: #000;
   color: #fff;
   outline: none;
+  visibility: visible;
+  opacity: 1;
 }
 
 .search-form__button:active {
   background-color: #000;
   color: rgba(255, 255, 255,  0.3);
+  visibility: visible;
+  opacity: 1;
 }
 
 /* _________________________ user-menu */
@@ -333,7 +351,11 @@ img {
   opacity: 0;
 }
 
-.site-menu__item--dropdown:focus-within .site-submenu,
+.site-menu__item--dropdown:focus-within .site-submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
 .site-menu__link--dropdown:hover + .site-submenu,
 .site-menu__link--dropdown:focus + .site-submenu,
 .site-submenu:hover,
@@ -1440,7 +1462,11 @@ img {
   outline: none;
 }
 
-.gadget:focus-within .gadget__cover,
+.gadget:focus-within .gadget__cover {
+  visibility: visible;
+  opacity: 1;
+}
+
 .gadget__image-link:hover ~ .gadget__cover,
 .gadget__image-link:focus ~ .gadget__cover,
 .gadget__cover:hover {
@@ -1449,13 +1475,14 @@ img {
 }
 
 .gadget__basket-button {
-  margin-bottom: 25px;
+  margin: 35px 0 15px;
   width: 200px;
   height: 40px;
   cursor: pointer;
 }
 
 .compare-button {
+  padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
