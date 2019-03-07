@@ -61,11 +61,11 @@
             <a class="site-menu__link  site-menu__link--dropdown" href="#">Каталог товаров</a>
             <ul class="site-menu__sublist site-submenu">
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Виртуальная реальность</a></li>
-              <li class="site-submenu__item"><a class="site-submenu__link">Моноподы для селфи</a></li>
-              <li class="site-submenu__item"><a class="site-submenu__link" href="#">Экшн-камеры</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Фитнес-браслеты</a></li>
-              <li class="site-submenu__item"><a class="site-submenu__link" href="#">Умные часы</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Квадрокоптеры</a></li>
+              <li class="site-submenu__item"><a class="site-submenu__link">Моноподы для селфи</a></li>
+              <li class="site-submenu__item"><a class="site-submenu__link" href="#">Умные часы</a></li>
+              <li class="site-submenu__item"><a class="site-submenu__link" href="#">Экшн-камеры</a></li>
             </ul>
           </li>
           <li class="site-menu__item"><a class="site-menu__link" href="#">Доставка</a></li>
@@ -84,11 +84,33 @@
         </ul>
       </header>
       <div class="main-content__container">
+        <div class="main-content__filters-header">
+          <h2 class="visually-hidden">Выбрать по&nbsp;характеристикам моноподы</h2>
+          <p class="main-content__filters-title">Фильтр:</p>
+        </div>
+        <div class="main-content__products-header">
+          <div class="main-content__products-inner">
+            <section class="main-content__sort sort">
+              <h3 class="sort__title">Сортировка:</h3>
+              <ul class="sort__items">
+                <li class="sort__item"><a class="sort__link sort__link--current" href="#">По&nbsp;цене</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По&nbsp;типу</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По&nbsp;популярности</a></li>
+              </ul>
+            </section>
+            <section class="main-content__choice choice">
+              <h3 class="visually-hidden">Вид сортировки:</h3>
+              <ul class="choice__items">
+                <li class="choice__item"><a class="choice__link choice__link--ascending choice__link--current" href="#"><span class="visually-hidden">По&nbsp;возрастанию</span></a></li>
+                <li class="choice__item"><a class="choice__link choice__link--descending" href="#"><span class="visually-hidden">По&nbsp;убыванию</span></a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="main-content__container">
         <section class="main-content__filters filters">
-          <header class="filters__header">
-            <h2 class="visually-hidden">Отфильтровать по&nbsp;характеристикам моноподы</h2>
-            <h3 class="filters__title">Фильтр:</h3>
-          </header>
+          <h3 class="visually-hidden">Фильтр:</h3>
           <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-form__fieldset">
               <legend class="filters-form__legend">Стоимость</legend>
@@ -148,27 +170,8 @@
           </form>
         </section>
         <section class="main-content__products products">
-          <header class="products__header">
-            <div class="products__header-inner">
-              <h2 class="visually-hidden">Выбрать монопод</h2>
-              <section class="products__sort sort">
-                <h3 class="sort__title">Сортировка:</h3>
-                <ul class="sort__items">
-                  <li class="sort__item"><a class="sort__link sort__link--current" href="#">По&nbsp;цене</a></li>
-                  <li class="sort__item"><a class="sort__link" href="#">По&nbsp;типу</a></li>
-                  <li class="sort__item"><a class="sort__link" href="#">По&nbsp;популярности</a></li>
-                </ul>
-              </section>
-              <section class="products__choice choice">
-                <h3 class="visually-hidden">Вид сортировки:</h3>
-                <ul class="choice__items">
-                  <li class="choice__item"><a class="choice__link choice__link--ascending choice__link--current" href="#"><span class="visually-hidden">По&nbsp;возрастанию</span></a></li>
-                  <li class="choice__item"><a class="choice__link choice__link--descending" href="#"><span class="visually-hidden">По&nbsp;убыванию</span></a></li>
-                </ul>
-              </section>
-            </div>
-          </header>
-          <ul class="products__items" aria-label="Список моноподов для селфи">
+          <h2 class="visually-hidden">Список моноподов для селфи</h2>
+          <ul class="products__items">
             <li class="products__item">
               <article class="gadget">
                 <a class="gadget__image-link">
