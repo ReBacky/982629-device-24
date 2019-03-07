@@ -332,9 +332,9 @@ img {
   left: -60px;
   z-index: 1;
   margin: 0;
-  padding: 20px 480px 35px 60px;
-  width: 620px;
-  height: 110px;
+  padding: 20px 460px 35px 60px;
+  width: 640px;
+  min-height: 110px;
   background-color: #f7e296;
   visibility: hidden;
   opacity: 0;
@@ -361,6 +361,8 @@ img {
 }
 
 .site-submenu__item {
+  width: 200px;
+  height: 36px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -1799,28 +1801,21 @@ img {
   margin-left: 35px;
 }
 
-.site-submenu {
+.site-menu__sublist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-.site-submenu__item:nth-child(5n) {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 calc(100% - 36px);
-  flex: 0 0 calc(100% - 36px);
+.site-submenu__item:nth-child(3n + 1) {
+  margin-right: 40px;
 }
 
-.site-submenu__item:nth-child(6n) {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+.site-submenu__item:last-child {
+  width: 100%;
 }
 
 /* __________________________________________________ main-content flex grids */
