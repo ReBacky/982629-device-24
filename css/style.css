@@ -687,7 +687,7 @@ img {
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.47px;
+  letter-spacing: 0.94px;
   color: #000;
 }
 
@@ -783,7 +783,7 @@ img {
 .about__title {
   position: relative;
   margin: 0;
-  padding: 55px 0 30px;
+  padding: 52px 0 30px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -803,8 +803,8 @@ img {
 }
 
 .about__list {
-  margin: 0;
-  padding: 50px 0;
+  margin: 48px 0 0 ;
+  padding: 0;
   list-style: none;
 }
 
@@ -832,6 +832,10 @@ img {
 
 .about__text {
   font: inherit;
+}
+
+.about__text:nth-of-type(2) {
+  letter-spacing: -0.15px;
 }
 
 .about__button {
@@ -873,7 +877,7 @@ img {
 .contacts__title {
   position: relative;
   margin: 0;
-  padding: 55px 0 30px;
+  padding: 52px 0 30px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -989,7 +993,7 @@ img {
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.4px;
   color: #000;
   text-align: left;
   text-transform: uppercase;
@@ -1109,7 +1113,7 @@ img {
   top: 0;
   left: 0;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1119,7 +1123,7 @@ img {
 
 .range-filter__cost-input {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   width: 40px;
   background: none;
   border: none;
@@ -1247,7 +1251,7 @@ img {
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.4px;
   color: #000;
   text-align: left;
   text-transform: uppercase;
@@ -1406,7 +1410,7 @@ img {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.36px;
   color: #000;
 }
 
@@ -1551,7 +1555,7 @@ img {
 .pagination__item:first-child .pagination__link,
 .pagination__item:last-child .pagination__link {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   padding: 0 30px;
   letter-spacing: 3.2px;
   line-height: 70px;
@@ -1606,8 +1610,7 @@ img {
 
 /* _________________________ address & tel */
 
-.page-footer__address,
-.page-footer__tel {
+.page-footer__address {
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -1616,6 +1619,10 @@ img {
 
 .page-footer__tel {
   text-align: right;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  letter-spacing: -0.3px;
 }
 
 .page-footer__tel-link {
@@ -1659,7 +1666,7 @@ img {
 
 .socials__link {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   width: 32px;
   height: 32px;
   opacity: 0.3;
@@ -1926,10 +1933,10 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 auto 84px;
-  padding: 0 20px;
+  margin: 0 auto 82px;
+  padding: 2px 20px 0;
   width: 1160px;
-  min-height: 570px;
+  min-height: 573px;
 }
 
 .main-content__about,
@@ -1953,7 +1960,7 @@ img {
 }
 
 .about__text {
-  width: 485px;
+  width: 470px;
 }
 
 .about__button,
@@ -2112,10 +2119,11 @@ img {
 }
 
 .page-footer__row:nth-child(2) {
-  padding: 10px 0 40px;
+  padding: 10px 0 38px;
 }
 
 .page-footer__user-menu {
+  margin-top: -2px;
   max-width: 50%;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -2156,7 +2164,7 @@ img {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
-  margin: 0 18px;
+  margin: 0 17px;
 }
 
 .page-footer__socials {
@@ -2181,7 +2189,7 @@ img {
 .page-footer__socials::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 15px;
   left: 0;
   width: 80px;
   height: 7px;
@@ -2263,7 +2271,7 @@ img {
 
 .modal-map {
   width: 960px;
-  height: 560px;
+  height: 559px;
   background-image: url("../img/map-big.jpg");
   background-repeat: no-repeat;
 }
@@ -2303,7 +2311,7 @@ img {
 .write-form__label {
   display: block;
   margin-bottom: 10px;
-  vertical-align: center;
+  vertical-align: middle;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
