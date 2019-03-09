@@ -529,6 +529,7 @@ img {
 }
 
 .gadgets-slider__table td {
+  padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -538,13 +539,18 @@ img {
 }
 
 .gadgets-slider__table th {
-  padding-right: 78px;
+  padding: 0;
+  min-width: 160px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.13px;
   color: #000;
+}
+
+.gadgets-slider__table th:nth-child(2) {
+  min-width: 140px;
 }
 
 /* _________________________ catalog */
