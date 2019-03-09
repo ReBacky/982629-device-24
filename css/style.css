@@ -407,12 +407,12 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  right: 50px;
+  right: 47px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 179px;
   font-weight: 800;
   line-height: 155px;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   color: #fff;
 }
 
@@ -512,16 +512,21 @@ img {
 
 .gadgets-slider__text {
   margin: 0 0 42px;
-  padding-right: 80px;
+  padding-right: 75px;
   font: inherit;
 }
 
 .gadgets-slider__button {
-  margin: 0 0 45px;
+  margin: 0 0 50px;
   width: 220px;
   cursor: pointer;
 }
 
+.gadgets-slider__table {
+  padding: 0;
+  border-collapse: collapse;
+  border: none;
+}
 
 .gadgets-slider__table td {
   font-family: "Gilroy", Arial, sans-serif;
@@ -533,11 +538,11 @@ img {
 }
 
 .gadgets-slider__table th {
-  padding-right: 75px;
+  padding-right: 78px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 30px;
   letter-spacing: 0.13px;
   color: #000;
 }
@@ -1636,7 +1641,7 @@ img {
   margin: 0;
   padding: 0;
   font-style: normal;
-  letter-spacing: -0.3px;
+  letter-spacing: normal;
 }
 
 .page-footer__tel-link {
@@ -1753,6 +1758,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: -3.6px;
   padding-top: 30px;
 }
 
