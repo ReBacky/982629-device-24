@@ -925,15 +925,15 @@ img {
   color: #000;
 }
 
-.main-content__title--email {
+.write-form--email {
   position: relative;
 }
 
-.main-content__title--email::after {
+.write-form--email::before {
   content: "";
   position: absolute;
+  top: 30px;
   right: 160px;
-  bottom: -200px;
   width: 180px;
   height: 170px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='170' viewBox='0 0 90 85' aria-hidden='true'%3E%3Cpath fill='%233a3a3a' d='M27.28,53.71l18.12,15,0,0ZM45.38,65.2L29,51.61,45.34,65.23ZM90,29.69V84.62H0V29.68l9.62-6.31V8.32h23L45.28,0,57.81,8.32H80.37v15Zm-9.63,5.94,6-5.08-6-4v9.06ZM37.57,8.32H52.88L45.27,3.27ZM12.35,37.71L29,51.61,45.34,65.23l0,0L77.65,37.72V11H12.35V37.71Zm-8.7-7.16,6,5V26.64Zm83.62,2.81L45.43,68.79l0,0-18.12-15L2.73,33.32V81.89H87.27V33.36h0Z'%3E%3C/path%3E%3Cpath fill='%23f0c42e' d='M43.92,49.56c-7.07,0-13.06-5.17-13.06-13.45,0-8.88,6.16-16.55,15.73-16.55,7.5,0,12.54,5.26,12.54,12.45,0,6.47-3.62,10.26-7.67,10.26-1.72,0-3.32-1.16-3.19-3.79H48.1C46.59,41,44.61,42.28,42,42.28s-4.65-2-4.65-5.43A10.18,10.18,0,0,1,47.58,26.63a11.36,11.36,0,0,1,4.61.9l-1.46,7.8c-0.65,3.28-.13,4.78,1.29,4.83,2.2,0,4.65-2.89,4.65-7.89,0-6.25-3.75-10.73-10.43-10.73-7,0-12.93,5.56-12.93,14.31,0,7.2,4.7,11.64,11.08,11.64A13.44,13.44,0,0,0,50.9,46l0.69,1.85A15.71,15.71,0,0,1,43.92,49.56Zm5.3-20.34a7.49,7.49,0,0,0-2.15-.3c-3.79,0-6.85,3.58-6.85,7.76,0,1.9.95,3.28,2.85,3.28,2.5,0,4.78-3.19,5.26-5.86Z'%3E%3C/path%3E%3C/svg%3E");
@@ -1985,7 +1985,7 @@ img {
 
 /* _________________________ main-content__header */
 
-.main-content--wrap {
+.main-content__wrap {
   margin: 0 auto 60px;
   padding: 0 60px;
   width: 1040px;
@@ -2392,27 +2392,54 @@ img {
 
 /* _________________________ modal effects */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
+    -webkit-transform: translate(-50%, -1000%);
     transform: translate(-50%, -1000%);
   }
 
   70% {
+    -webkit-transform: translate(-50%, -45%);
     transform: translate(-50%, -45%);
   }
 
   90% {
+    -webkit-transform: translate(-50%, -55%);
     transform: translate(-50%, -55%);
   }
 
   100% {
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, -1000%);
+    transform: translate(-50%, -1000%);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
@@ -2421,6 +2448,7 @@ img {
   50%,
   70%,
   90% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
@@ -2428,6 +2456,32 @@ img {
   40%,
   60%,
   80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
@@ -2435,9 +2489,11 @@ img {
 .modal-show,
 .modal-map:target {
   display: block;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
 .modal-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }

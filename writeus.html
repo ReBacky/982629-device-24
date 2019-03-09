@@ -63,7 +63,7 @@
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Виртуальная реальность</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Фитнес-браслеты</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Квадрокоптеры</a></li>
-              <li class="site-submenu__item"><a class="site-submenu__link">Моноподы для селфи</a></li>
+              <li class="site-submenu__item"><a class="site-submenu__link" href="inner.html">Моноподы для селфи</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Умные часы</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Экшн-камеры</a></li>
             </ul>
@@ -74,21 +74,29 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content main-content--wrap">
-      <h1 class="main-content__title main-content__title--email">Напишите нам</h1>
-      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="write-form__col">
-          <label class="write-form__label" for="full-name-field">Ваше имя:</label>
-          <input class="write-form__input" id="full-name-field" type="text" name="full-name" placeholder="Имя Фамилия">
-          <label class="write-form__label" for="email-field">Ваш e-mail:</label>
-          <input class="write-form__input" id="email-field" type="email" name="email-address" placeholder="email@example.com">
-        </div>
-        <div class="write-form__row">
-          <label class="write-form__label" for="mail-text">Текст письма:</label>
-          <textarea class="write-form__text write-form__text--resizable" id="mail-text" name="mail-text" rows="6" placeholder="В свободной форме"></textarea>
-          <button class="write-form__button button" type="submit">Отправить</button>
-        </div>
-      </form>
+    <main class="main-content">
+      <header  class="main-content__header">
+        <h1 class="main-content__title">Напишите нам</h1>
+        <ul class="main-content__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item">Напишите нам</li>
+        </ul>
+      </header>
+      <div class="main-content__wrap">
+        <form class="write-form write-form--email" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-form__col">
+            <label class="write-form__label" for="full-name-field">Ваше имя:</label>
+            <input class="write-form__input" id="full-name-field" type="text" name="full-name" placeholder="Имя Фамилия">
+            <label class="write-form__label" for="email-field">Ваш e-mail:</label>
+            <input class="write-form__input" id="email-field" type="email" name="email-address" placeholder="email@example.com">
+          </div>
+          <div class="write-form__row">
+            <label class="write-form__label" for="mail-text">Текст письма:</label>
+            <textarea class="write-form__text write-form__text--resizable" id="mail-text" name="mail-text" rows="6" placeholder="В свободной форме"></textarea>
+            <button class="write-form__button button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
