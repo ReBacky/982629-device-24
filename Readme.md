@@ -1,7 +1,5 @@
 # Личный проект «Девайс»
 
-* Студент: [Дмитрий Остроухов](https://up.htmlacademy.ru/htmlcss/24/user/982629).
-* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/htmlcss/24/user/39082).
 
 ---
 
