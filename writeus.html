@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Моноподы для селфи&nbsp;| DEVICE</title>
+    <title>Форма обратной связи&nbsp;| DEVICE</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -63,7 +63,7 @@
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Виртуальная реальность</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Фитнес-браслеты</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Квадрокоптеры</a></li>
-              <li class="site-submenu__item"><a class="site-submenu__link">Моноподы для селфи</a></li>
+              <li class="site-submenu__item"><a class="site-submenu__link" href="inner.html">Моноподы для селфи</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Умные часы</a></li>
               <li class="site-submenu__item"><a class="site-submenu__link" href="#">Экшн-камеры</a></li>
             </ul>
@@ -76,163 +76,26 @@
     </header>
     <main class="main-content">
       <header  class="main-content__header">
-        <h1 class="main-content__title">Моноподы для селфи</h1>
+        <h1 class="main-content__title">Напишите нам</h1>
         <ul class="main-content__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
-          <li class="breadcrumbs__item">Моноподы для селфи</li>
+          <li class="breadcrumbs__item">Напишите нам</li>
         </ul>
       </header>
-      <div class="main-content__container">
-        <div class="main-content__filters-header">
-          <h2 class="visually-hidden">Выбрать по&nbsp;характеристикам моноподы</h2>
-          <p class="main-content__filters-title">Фильтр:</p>
-        </div>
-        <div class="main-content__products-header">
-          <div class="main-content__products-inner">
-            <section class="main-content__sort sort">
-              <h3 class="sort__title">Сортировка:</h3>
-              <ul class="sort__items">
-                <li class="sort__item"><a class="sort__link sort__link--current" href="#">По&nbsp;цене</a></li>
-                <li class="sort__item"><a class="sort__link" href="#">По&nbsp;типу</a></li>
-                <li class="sort__item"><a class="sort__link" href="#">По&nbsp;популярности</a></li>
-              </ul>
-            </section>
-            <section class="main-content__choice choice">
-              <h3 class="visually-hidden">Вид сортировки:</h3>
-              <ul class="choice__items">
-                <li class="choice__item"><a class="choice__link choice__link--ascending choice__link--current" href="#"><span class="visually-hidden">По&nbsp;возрастанию</span></a></li>
-                <li class="choice__item"><a class="choice__link choice__link--descending" href="#"><span class="visually-hidden">По&nbsp;убыванию</span></a></li>
-              </ul>
-            </section>
+      <div class="main-content__wrap">
+        <form class="write-form write-form--email" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-form__col">
+            <label class="write-form__label" for="full-name-field">Ваше имя:</label>
+            <input class="write-form__input" id="full-name-field" type="text" name="full-name" placeholder="Имя Фамилия" required>
+            <label class="write-form__label" for="email-field">Ваш e-mail:</label>
+            <input class="write-form__input" id="email-field" type="email" name="email-address" placeholder="email@example.com" required>
           </div>
-        </div>
-      </div>
-      <div class="main-content__container">
-        <section class="main-content__filters filters">
-          <h3 class="visually-hidden">Фильтр:</h3>
-          <form class="filters__form filters-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filters-form__fieldset">
-              <legend class="filters-form__legend">Стоимость</legend>
-              <div class="filters-form__range-filter range-filter">
-                <div class="range-filter__controls">
-                  <div class="range-filter__scale">
-                    <div class="range-filter__bar"></div>
-                  </div>
-                  <div class="range-filter__toggle range-filter__toggle--min"><span class="visually-hidden">Минимальная стоимость</span></div>
-                  <div class="range-filter__toggle range-filter__toggle--max"><span class="visually-hidden">Максимальная стоимость</span></div>
-                </div>
-                <div class="range-filter__cost-controls">
-                  <label class="range-filter__cost range-filter__cost--min">от <input class="range-filter__cost-input" name="min-cost" type="text" value="0"></label>
-                  <label class="range-filter__cost range-filter__cost--max">до <input class="range-filter__cost-input" name="max-cost" type="text" value="5000"></label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="filters-form__fieldset">
-              <legend class="filters-form__legend">Цвет</legend>
-              <ul class="filters-form__items color-gadgets">
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="black" type="checkbox" name="black" checked>
-                  <label class="filters-form__label" for="black">Черный</label>
-                </li>
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="white" type="checkbox" name="white">
-                  <label class="filters-form__label" for="white">Белый</label>
-                </li>
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="blue" type="checkbox" name="blue" checked>
-                  <label class="filters-form__label" for="blue">Синий</label>
-                </li>
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="red" type="checkbox" name="red" checked disabled>
-                  <label class="filters-form__label" for="red">Красный</label>
-                </li>
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="pink" type="checkbox" name="pink" disabled>
-                  <label class="filters-form__label" for="pink">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filters-form__fieldset">
-              <legend class="filters-form__legend">Bluetooth</legend>
-              <ul class="filters-form__items bluetooth-availability">
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="bluetooth-true" type="radio" name="bluetooth" value="true" checked>
-                  <label class="filters-form__label" for="bluetooth-true">Есть</label>
-                </li>
-                <li class="filters-form__item">
-                  <input class="filters-form__input visually-hidden" id="bluetooth-false" type="radio" name="bluetooth" value="false">
-                  <label class="filters-form__label" for="bluetooth-false">Нет</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="filters-form__button button" type="submit">Показать</button>
-          </form>
-        </section>
-        <section class="main-content__products products">
-          <h2 class="visually-hidden">Список моноподов для селфи</h2>
-          <ul class="products__items">
-            <li class="products__item">
-              <article class="gadget">
-                <a class="gadget__image-link">
-                  <img class="gadget__image" src="img/item-1.jpg" width="360" height="380" alt="Самый простой вариант селфи-палки">
-                </a>
-                <h3 class="gadget__title"><a class="gadget__title-link" href="#">Любительская селфи&#8209;палка</a></h3>
-                <p class="gadget__price">500&nbsp;руб.</p>
-                <div class="gadget__cover">
-                  <button class="gadget__basket-button button" type="button">В&nbsp;корзину</button>
-                  <button class="gadget__compare-button compare-button" type="button">Добавить к&nbsp;сравнению</button>
-                </div>
-              </article>
-            </li>
-            <li class="products__item">
-              <article class="gadget">
-                <a class="gadget__image-link">
-                  <img class="gadget__image" src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с дополнительными функциями регулировки">
-                </a>
-                <h3 class="gadget__title"><a class="gadget__title-link" href="#">Профессиональная селфи&#8209;палка</a></h3>
-                <p class="gadget__price">1&nbsp;500&nbsp;руб.</p>
-                <div class="gadget__cover">
-                  <button class="gadget__basket-button button" type="button">В&nbsp;корзину</button>
-                  <button class="gadget__compare-button compare-button" type="button">Добавить к&nbsp;сравнению</button>
-                </div>
-              </article>
-            </li>
-            <li class="products__item">
-              <article class="gadget">
-                <a class="gadget__image-link">
-                  <img class="gadget__image" src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка с рукоятью в виде поплавка">
-                </a>
-                <h3 class="gadget__title"><a class="gadget__title-link" href="#">Непотопляемая селфи&#8209;палка</a></h3>
-                <p class="gadget__price">2&nbsp;500&nbsp;руб.</p>
-                <div class="gadget__cover">
-                  <button class="gadget__basket-button button" type="button">В&nbsp;корзину</button>
-                  <button class="gadget__compare-button compare-button" type="button">Добавить к&nbsp;сравнению</button>
-                </div>
-              </article>
-            </li>
-            <li class="products__item">
-              <article class="gadget gadget--new">
-                <a class="gadget__image-link">
-                  <img class="gadget__image" src="img/item-4.jpg" width="360" height="380" alt="Оригинальная селфи-палка в виде руки">
-                </a>
-                <h3 class="gadget__title"><a class="gadget__title-link" href="#">Селфи&#8209;палка &laquo;Следуй&nbsp;за мной&raquo;</a></h3>
-                <p class="gadget__price">4&nbsp;900&nbsp;руб.</p>
-                <div class="gadget__cover">
-                  <button class="gadget__basket-button button" type="button">В&nbsp;корзину</button>
-                  <button class="gadget__compare-button compare-button" type="button">Добавить к&nbsp;сравнению</button>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <ul class="products__pagination pagination" aria-label="Пагинация">
-            <li class="pagination__item"><a class="pagination__link">Назад</a></li>
-            <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#">1</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">Вперед</a></li>
-          </ul>
-        </section>
+          <div class="write-form__row">
+            <label class="write-form__label" for="mail-text">Текст письма:</label>
+            <textarea class="write-form__text write-form__text--resizable" id="mail-text" name="mail-text" rows="6" placeholder="В свободной форме" required="required"></textarea>
+            <button class="write-form__button button" type="submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </main>
     <footer class="page-footer">

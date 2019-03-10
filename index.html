@@ -129,7 +129,7 @@
             </div>
             <div class="gadgets-slider__col">
               <h3 class="gadgets-slider__title">Порхает как бабочка, жалит как пчела!</h3>
-              <p class="gadgets-slider__text">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class="gadgets-slider__text">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.</p>
               <a class="gadgets-slider__button button-link" href="#">Подробнее</a>
               <table class="gadgets-slider__table">
                 <caption class="visually-hidden">Параметры товара</caption>
@@ -246,10 +246,10 @@
         <section class="main-content__contacts contacts">
           <h3 class="contacts__title">Контакты</h3>
           <p class="contacts__text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts__map-link" href="#">
-            <img class="contacts__map-image" src="img/map.jpg" width="560" height="222" alt="Карта расположения офиса интернет-магазина по адресу: город Москва, улица Строителей, 15">
+          <a class="contacts__map-link" href="#modal-map">
+            <img id="map-image" class="contacts__map-image" src="img/map.jpg" width="560" height="222" alt="Карта расположения офиса интернет-магазина по адресу: город Москва, улица Строителей, 15">
           </a>
-          <a class="contacts__button button-link" href="#">Напишите нам</a>
+          <a class="contacts__button button-link" href="writeus.html">Напишите нам</a>
         </section>
       </section>
     </main>
@@ -312,10 +312,10 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal-map">
+    <section id="modal-map" class="modal modal-map">
       <h2 class="visually-hidden">Как до&nbsp;нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473713!2d37.52742931606337!3d55.687034004529735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1551619594788" width="960" height="559" allowfullscreen></iframe>
-      <button class="button-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+      <a class="button-close" href="#map-image"><span class="visually-hidden">Закрыть модальное окно</span></a>
     </section>
     <section class="modal modal-write">
       <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -336,5 +336,6 @@
       </form>
       <button class="button-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
