@@ -77,19 +77,19 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
-fullName.addEventListener("input", function (evt) {
+fullName.addEventListener("input", function () {
   if (fullName.value) {
     fullName.classList.remove("write-form__input--invalid");
   }
 });
 
-emailAddress.addEventListener("input", function (evt) {
+emailAddress.addEventListener("input", function () {
   if (emailAddress.value) {
     emailAddress.classList.remove("write-form__input--invalid");
   }
 });
 
-mailText.addEventListener("input", function (evt) {
+mailText.addEventListener("input", function () {
   if (mailText.value) {
     mailText.classList.remove("write-form__input--invalid");
   }
