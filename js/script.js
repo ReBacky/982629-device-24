@@ -1,30 +1,30 @@
 //  Объявляем переменные для слайдера «Популярные гаджеты»
 
-var sliderButtons = document.querySelectorAll(".gadgets-slider__switch");
-var slides = document.querySelectorAll(".gadgets-slider__item");
+const sliderButtons = document.querySelectorAll(".gadgets-slider__switch");
+const slides = document.querySelectorAll(".gadgets-slider__item");
 
 //  Объявляем переменные для слайдера «Сервисы»
 
-var tabButtons = document.querySelectorAll(".services__button");
-var tabs = document.querySelectorAll(".services__tab");
+const tabButtons = document.querySelectorAll(".services__button");
+const tabs = document.querySelectorAll(".services__tab");
 
 //  Объявляем переменные для формы «Напишите нам»
 
-var contactsButton = document.querySelector(".contacts__button");
-var popup = document.querySelector(".modal-write");
-var buttonClose = popup.querySelector(".button-close");
-var form = popup.querySelector("form");
-var fullName = popup.querySelector("[name=full-name]");
-var emailAddress = popup.querySelector("[name=email-address]");
-var mailText = popup.querySelector("[name=mail-text]");
+const contactsButton = document.querySelector(".contacts__button");
+const popup = document.querySelector(".modal-write");
+const buttonClose = popup.querySelector(".button-close");
+const form = popup.querySelector("form");
+const fullName = popup.querySelector("[name=full-name]");
+const emailAddress = popup.querySelector("[name=email-address]");
+const mailText = popup.querySelector("[name=mail-text]");
 
 
 //  Слайдер «Популярные гаджеты»
 
-for (var i = 0; i < sliderButtons.length; i++) {
+for (let i = 0; i < sliderButtons.length; i++) {
   sliderButtons[i].addEventListener("click", function (evt) {
     evt.preventDefault();
-    for (var j = 0; j < slides.length; j++) {
+    for (let j = 0; j < slides.length; j++) {
       sliderButtons[j].classList.remove("gadgets-slider__switch--current");
       evt.target.classList.add("gadgets-slider__switch--current");
       slides[j].classList.remove("gadgets-slider__item--visible");
@@ -37,10 +37,10 @@ for (var i = 0; i < sliderButtons.length; i++) {
 
 //  Слайдер «Сервисы»
 
-for (var k = 0; k < tabButtons.length; k++) {
+for (let k = 0; k < tabButtons.length; k++) {
   tabButtons[k].addEventListener("click", function (evt) {
     evt.preventDefault();
-    for (var m = 0; m < tabs.length; m++) {
+    for (let m = 0; m < tabs.length; m++) {
       tabButtons[m].classList.remove("services__button--current");
       evt.target.classList.add("services__button--current");
       tabs[m].classList.remove("services__tab--visible");
